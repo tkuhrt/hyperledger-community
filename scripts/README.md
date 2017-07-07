@@ -25,6 +25,7 @@ The file `name-replacement.sed` contains sed entries to replace nicknames with f
 * `sort`
 
 ### Usage
+This script is used on a yearly basis to get a list of contributors in the past year for TSC election rolls.
 ```
 get_contributors.sh [--since mm/dd/yyyy]]
 Get contributors from all Hyperledger repositories.
