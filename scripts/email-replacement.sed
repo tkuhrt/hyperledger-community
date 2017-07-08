@@ -111,6 +111,7 @@ s/2@0x2c.org/2-hl-gerrit@0x2c.org/
 s/ineffectualproperty@users.noreply.github.com/kelly.m.olson@intel.com/
 s/seanbarclay@users.noreply.github.com/sbarclay@us.ibm.com/
 s/torresjeff@users.noreply.github.com/torres.jeff@hotmail.com/
+s/hanhzf@126.com/frank@arxanfintech.com/
 /ubuntu@ubuntu-xenial.localdomain/d
 /travis@ibm.com/d
 /evernym-ci@evernym.com/d
