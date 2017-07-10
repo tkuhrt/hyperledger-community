@@ -64,7 +64,6 @@ s/^ravi-teja@live.com|.*$/ravi-teja@live.com|Ravi Teja/
 s/^rj@monax.io|.*$/rj@monax.io|RJ Catalano/
 s/^rbuysse@bitwise.io|.*$/rbuysse@bitwise.io|Ryan Beck-Buysse/
 s/^s1210006@u-aizu.ac.jp|.*$/s1210006@u-aizu.ac.jp|Satoshi Kaji/
-s/^samwinslet@gmail.com|.*$/samwinslet@gmail.com|Sam Winslet/
 s/^sranderson@gmail.com|.*$/sranderson@gmail.com|Sheehan Anderson/
 s/^smithsj@uk.ibm.com|.*$/smithsj@uk.ibm.com|Sam J Smith/
 s/^sowjanyamakkena7@gmail.com|.*$/sowjanyamakkena7@gmail.com|Sowjanya Makkena/
@@ -88,7 +87,6 @@ s/^konstantin@soramitsu.co.jp|.*$/konstantin@soramitsu.co.jp|Konstantin Munichev
 s/^lovesh.bond@gmail.com|.*$/lovesh.bond@gmail.com|Lovesh Harchandani/
 s/^anastasiya.tarasova@dsr-company.com|.*$/anastasiya.tarasova@dsr-company.com|Anastasiya Tarasova/
 s/^cazfletch@gmail.com|.*$/cazfletch@gmail.com|Caroline Church/
-s/^samwinslet@gmail.com|.*$/samwinslet@gmail.com|Sam Winslet/
 s/^samwinslet@uk.ibm.com|.*$/samwinslet@uk.ibm.com|Sam Winslet/
 s/yonezu@soramitsu.co.jp|.*$/yonezu@soramitsu.co.jp|Takeshi Yonezu/
 s/aditya@evernym.us|.*$/aditya@evernym.us|Aditya Pratap Singh/
