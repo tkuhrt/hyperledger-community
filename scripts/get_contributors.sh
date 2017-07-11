@@ -1,5 +1,12 @@
 #!/bin/bash
 
+script_dir=`dirname $0`
+
+if [[ "$script_dir" == "." ]]
+then
+  script_dir=$PWD
+fi
+
 . `dirname $0`/repositories.sh
 
 #Default variables
@@ -55,7 +62,7 @@ outbase=${outdir}/${repo}
 git log --format='%aE|%aN' ${since:+--since=${since}} > ${outbase}.gitlog
 
 # Replace duplicate emails with preferred email
-sed -f ~/scripts/email-replacement.sed -f ~/scripts/name-replacement.sed ${outbase}.gitlog > ${outbase}.contributors
+sed -f ${script_dir}/email-replacement.sed -f ${script_dir}/name-replacement.sed ${outbase}.gitlog > ${outbase}.contributors
 
 # Sort contributors based on email (1st key) ignoring case
 LC_ALL=C sort -i -t "|" -k 1 -u -f ${outbase}.contributors > ${outbase}.sorted
