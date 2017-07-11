@@ -113,6 +113,7 @@ s/seanbarclay@users.noreply.github.com/sbarclay@us.ibm.com/
 s/torresjeff@users.noreply.github.com/torres.jeff@hotmail.com/
 s/hanhzf@126.com/frank@arxanfintech.com/
 s/samwinslet@gmail.com/samwinslet@uk.ibm.com/
+s/rohit.sharma@evernym.us/rohitsharma9204@gmail.com/
 /ubuntu@ubuntu-xenial.localdomain/d
 /travis@ibm.com/d
 /evernym-ci@evernym.com/d
