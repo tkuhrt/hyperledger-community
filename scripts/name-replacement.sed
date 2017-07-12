@@ -95,4 +95,5 @@ s/joseph.kiran@evernym.us|.*$/joseph.kiran@evernym.us|Joseph Kiran/
 s/chawlanikhil24@gmail.com|.*$/chawlanikhil24@gmail.com|Nikhil Chawla/
 s/rohitsharma9204@gmail.com|.*$/rohitsharma9204@gmail.com|Rohit Sharma/
 s/nathan.george@evernym.com|.*$/nathan.george@evernym.com|Nathan George/
+s/bogdan@soramitsu.co.jp|.*$/bogdan@soramitsu.co.jp|Bogdan Vaneev/
 /^|Import Committer/d
