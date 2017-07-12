@@ -94,4 +94,5 @@ s/mack@macktronics.com|.*$/mack@macktronics.com|Dan Mack/
 s/joseph.kiran@evernym.us|.*$/joseph.kiran@evernym.us|Joseph Kiran/
 s/chawlanikhil24@gmail.com|.*$/chawlanikhil24@gmail.com|Nikhil Chawla/
 s/rohitsharma9204@gmail.com|.*$/rohitsharma9204@gmail.com|Rohit Sharma/
+s/nathan.george@evernym.com|.*$/nathan.george@evernym.com|Nathan George/
 /^|Import Committer/d
