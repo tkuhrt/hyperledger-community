@@ -35,7 +35,8 @@ s/andreas@erisindustries.com/andreas@monax.io/
 s/ben@erisindustries.com/ben@monax.io/
 s/casey@erisindustries.com/casey@monax.io/
 s/rj@erisindustries.com/rj@monax.io/
-s/silas@erisindustries.com/silas@monax.io/
+s/silas@erisindustries.com/github@silasdavis.net/
+s/silas@monax.io/github@silasdavis.net/
 s/zach@erisindustries.com/zach@monax.io/
 s/shawnx.amundson@intel.com/amundson@bitwise.io/
 s/mbwhite@users.noreply.github.com/whitemat@uk.ibm.com/
