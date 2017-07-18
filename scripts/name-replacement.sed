@@ -74,7 +74,6 @@ s/^thomas.j.barnes@intel.com|.*$/thomas.j.barnes@intel.com|Thomas J Barnes/
 s/^tobias.hunter@uk.ibm.com|.*$/tobias.hunter@uk.ibm.com|Tobias Hunter/
 s/^todd@bitwise.io|.*$/todd@bitwise.io|Todd Ojala/
 s/^vyacheslav.gudkov@dsr-company.com|.*$/vyacheslav.gudkov@dsr-company.com|Vyacheslav Gudkov/
-s/^warchantua@gmail.com|.*$/warchantua@gmail.com|Bogdan Vaneev/
 s/^whitemat@uk.ibm.com|.*$/whitemat@uk.ibm.com|Matthew B White/
 s/^xufengli@uk.ibm.com|.*$/xufengli@uk.ibm.com|Fenglian Xu/
 s/^y.namiki@gmail.com|.*$/y.namiki@gmail.com|Yuta Namiki/
