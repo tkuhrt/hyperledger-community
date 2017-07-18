@@ -1,6 +1,35 @@
 # Scripts
 Contains a collection of scripts used to support the Hyperledger community.
 
+## `get_commit_counts.sh`
+Get the number of commits from all source repositories (as defined in `repositories.sh`). Will output the results at:
+```
+/tmp/hyperledger-commit-counts-<date>/commit-count.total
+```
+
+The results file is in the format of:
+```
+<repo>.count <count>
+...
+<repo>.count <count>
+TOTAL: <total-count>
+```
+
+### Requirements
+* `git`
+
+### Usage
+This script is used to get the number of commits that have occurred against all Hyperledger repositories
+```
+get_commit_counts.sh [--since mm/dd/yyyy]]
+Get commit counts from all Hyperledger repositories.
+
+Options:
+  --since: Specify from which date to obtain commits (mm/dd/yyyy).
+           By default obtains commits from the start of the repo.
+  --help:  Shows this help message
+```
+
 ## `get_contributors.sh`
 Pull a list of contributors from all source repositories (as defined in `repositories.sh`). Will output the results at:
 ```
