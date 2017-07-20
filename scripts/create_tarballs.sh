@@ -8,11 +8,6 @@ filename="hyperledger-source"
 all_specified=FALSE
 tarball=TRUE
 
-if [[ $# -eq 0 ]]; then
-  repositories="${all_repositories[@]}" 
-  filename+="-all"
-fi
-
 # Handle command line arguments
 while [[ $# -gt 0 ]]
 do
@@ -126,6 +121,13 @@ EOM
 esac
 shift # past argument or value
 done
+
+# if no repositories were specified, then act as if --all was specified
+if [ "$repositories" == "" ]
+then
+  repositories="${all_repositories[@]}"
+  filename+="-all"
+fi
 
 today=`date -u +%Y-%m-%d-%H-%M-%S`
 mkdir -p /tmp/${filename}-${today}
