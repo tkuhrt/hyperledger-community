@@ -13,6 +13,7 @@ fi
 repositories="${all_repositories[@]}" 
 filename="hyperledger-commit-counts"
 since=""
+until=""
 
 # Handle command line arguments
 while [[ $# -gt 0 ]]
@@ -24,14 +25,20 @@ case $key in
       since="$2"
       shift # past argument or value. 2nd shift below
       ;;
+    --until)
+      until="$2"
+      shift # past argument or value. 2nd shift below
+      ;;
     --help)
       cat << EOM
-        get_commit-counts.sh [--since mm/dd/yyyy]]
+        get_commit-counts.sh [--since mm/dd/yyyy] [--until mm/dd/yyyy]
         Get commit count from all Hyperledger repositories.
 
         Options:
-          --since: Specify from which date to obtain contributors (mm/dd/yyyy).
+          --since: Specify since which date to obtain contributors (mm/dd/yyyy).
                    By default obtains contributors from the start of the repo.
+          --until: Specify until which date to obtain contributors (mm/dd/yyyy).
+                   By default obtains contributors until the end of commits.
           --help:  Shows this help message
 EOM
     exit;
@@ -59,7 +66,7 @@ do
   outbase=${outdir}/${repo}
   
   # Get count of commits
-  git rev-list HEAD --count > ${outbase}.count
+  git rev-list HEAD --count ${since:+--since=${since}} ${until:+--until=${until}} > ${outbase}.count
   
   cd ..
 done
