@@ -87,14 +87,15 @@ s/^lovesh.bond@gmail.com|.*$/lovesh.bond@gmail.com|Lovesh Harchandani/
 s/^anastasiya.tarasova@dsr-company.com|.*$/anastasiya.tarasova@dsr-company.com|Anastasiya Tarasova/
 s/^cazfletch@gmail.com|.*$/cazfletch@gmail.com|Caroline Church/
 s/^samwinslet@uk.ibm.com|.*$/samwinslet@uk.ibm.com|Sam Winslet/
-s/yonezu@soramitsu.co.jp|.*$/yonezu@soramitsu.co.jp|Takeshi Yonezu/
-s/aditya@evernym.us|.*$/aditya@evernym.us|Aditya Pratap Singh/
-s/mack@macktronics.com|.*$/mack@macktronics.com|Dan Mack/
-s/joseph.kiran@evernym.us|.*$/joseph.kiran@evernym.us|Joseph Kiran/
-s/chawlanikhil24@gmail.com|.*$/chawlanikhil24@gmail.com|Nikhil Chawla/
-s/rohitsharma9204@gmail.com|.*$/rohitsharma9204@gmail.com|Rohit Sharma/
-s/nathan.george@sovrin.org|.*$/nathan.george@sovrin.org|Nathan George/
-s/bogdan@soramitsu.co.jp|.*$/bogdan@soramitsu.co.jp|Bogdan Vaneev/
-s/okada@soramitsu.co.jp|.*$/okada@soramitsu.co.jp|Ryu Okada/
-s/mgutala@dtcc.com|.*$/mgutala@dtcc.com|Mahesh Gutala/
+s/^yonezu@soramitsu.co.jp|.*$/yonezu@soramitsu.co.jp|Takeshi Yonezu/
+s/^aditya@evernym.us|.*$/aditya@evernym.us|Aditya Pratap Singh/
+s/^mack@macktronics.com|.*$/mack@macktronics.com|Dan Mack/
+s/^joseph.kiran@evernym.us|.*$/joseph.kiran@evernym.us|Joseph Kiran/
+s/^chawlanikhil24@gmail.com|.*$/chawlanikhil24@gmail.com|Nikhil Chawla/
+s/^rohitsharma9204@gmail.com|.*$/rohitsharma9204@gmail.com|Rohit Sharma/
+s/^nathan.george@sovrin.org|.*$/nathan.george@sovrin.org|Nathan George/
+s/^bogdan@soramitsu.co.jp|.*$/bogdan@soramitsu.co.jp|Bogdan Vaneev/
+s/^okada@soramitsu.co.jp|.*$/okada@soramitsu.co.jp|Ryu Okada/
+s/^mgutala@dtcc.com|.*$/mgutala@dtcc.com|Mahesh Gutala/
+s/^mwagner@redhat.com|.*$/mwagner@redhat.com|Mark Wagner/
 /^|Import Committer/d
