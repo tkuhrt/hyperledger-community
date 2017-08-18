@@ -3,7 +3,7 @@
 . `dirname $0`/repositories.sh
 
 #Default variables
-repositories=""
+repositories=()
 filename="hyperledger-source"
 all_specified=FALSE
 tarball=TRUE
@@ -123,6 +123,7 @@ shift # past argument or value
 done
 
 # if no repositories were specified, then act as if --all was specified
+echo "$repositories"
 if [ "$repositories" == "" ]
 then
   repositories="${all_repositories[@]}"
