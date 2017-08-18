@@ -123,7 +123,6 @@ shift # past argument or value
 done
 
 # if no repositories were specified, then act as if --all was specified
-echo "$repositories"
 if [ "$repositories" == "" ]
 then
   repositories="${all_repositories[@]}"
