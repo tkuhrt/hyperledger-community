@@ -13,10 +13,16 @@ fabric_repositories=(
   https://gerrit.hyperledger.org/r/fabric-sdk-py
   https://gerrit.hyperledger.org/r/fabric-test-resources
   https://gerrit.hyperledger.org/r/homebrew-fabric
+  https://gerrit.hyperledger.org/r/fabric-test
+  https://gerrit.hyperledger.org/r/fabric-chaincode-node
+  https://gerrit.hyperledger.org/r/fabric-sdk-rest
+  https://gerrit.hyperledger.org/r/fabric-chaincode-java
+  https://gerrit.hyperledger.org/r/fabric-docs
 )
 
 sawtooth_repositories=(
   https://github.com/hyperledger/sawtooth-core.git
+  https://github.com/hyperledger/sawtooth-supply-chain.git
 )
 
 iroha_repositories=(
@@ -37,14 +43,10 @@ burrow_repositories=(
 
 indy_repositories=(
   https://github.com/hyperledger/indy-plenum.git
-  https://github.com/hyperledger/indy-client.git
   https://github.com/hyperledger/indy-node.git
-  https://github.com/hyperledger/indy-common.git
-  https://github.com/hyperledger/indy-ledger.git
-  https://github.com/hyperledger/indy-anoncreds.git
   https://github.com/hyperledger/indy-sdk.git
-  https://github.com/hyperledger/indy-stp.git
-  https://github.com/hyperledger/indy-state.git
+  https://github.com/hyperledger/indy-anoncreds.git
+  https://github.com/hyperledger/indy-crypto.git
 )
 
 composer_repositories=(
