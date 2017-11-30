@@ -141,6 +141,6 @@ done
 
 cd ..
 if [[ "$tarball" == TRUE ]] ; then
-  tar czvf ${filename}-${today}.tar.gz ${filename}-${today}
+  tar czvf ${filename}-${today}.tar.gz --exclude .git ${filename}-${today}
   rm -fr ${filename}-${today}
 fi
