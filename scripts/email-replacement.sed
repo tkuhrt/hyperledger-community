@@ -118,6 +118,7 @@ s/rohit.sharma@evernym.us/rohitsharma9204@gmail.com/
 s/sate@Takumis-MacBook-Pro.local/yamashita@soramitsu.co.jp/
 s/nathan.george@evernym.com/nathan.george@sovrin.org/
 s/warchantua@gmail.com/bogdan@soramitsu.co.jp/
+s/captainludd@users.noreply.github.com/ricjhill@gmail.com/
 /ubuntu@ubuntu-xenial.localdomain/d
 /travis@ibm.com/d
 /evernym-ci@evernym.com/d
