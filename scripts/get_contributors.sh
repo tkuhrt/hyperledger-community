@@ -70,6 +70,12 @@ case $key in
         filename+="-explorer"
       fi
     ;;
+    --quilt)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${quilt_repositories[@]}" )
+        filename+="-quilt"
+      fi
+    ;;
     --gerrit)
       if [[ "$all_specified" == FALSE ]] ; then
         repositories+=( "${gerrit_repositories[@]}" )
