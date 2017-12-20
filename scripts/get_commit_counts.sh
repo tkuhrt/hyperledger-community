@@ -71,6 +71,12 @@ case $key in
         filename+="-explorer"
       fi
     ;;
+    --quilt)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${quilt_repositories[@]}" )
+        filename+="-quilt"
+      fi
+    ;;
     --gerrit)
       if [[ "$all_specified" == FALSE ]] ; then
         repositories+=( "${gerrit_repositories[@]}" )
@@ -110,6 +116,7 @@ case $key in
           --composer: Include Composer repositories
           --cello:    Include Cello repositories
           --explorer: Include Explorer repositories
+          --quilt:    Include Quilt repositories
           --gerrit:   Include Gerrit repositories
           --github:   Include Github repositories
           --all:      Include all repositories (default)

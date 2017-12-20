@@ -74,10 +74,10 @@ case $key in
         filename+="-github"
       fi
     ;;
-    --interledger)
+    --quilt)
       if [[ "$all_specified" == FALSE ]] ; then
-        repositories+=( "${interledger_repositories[@]}" )
-        filename+="-interledger"
+        repositories+=( "${quilt_repositories[@]}" )
+        filename+="-quilt"
       fi
     ;;
     --all)
@@ -102,6 +102,7 @@ case $key in
           --composer:   Create a tarball containing Composer repositories
           --cello:      Create a tarball containing Cello repositories
           --explorer:   Create a tarball containing Explorer repositories
+          --quilt:      Create a tarball containing Quilt repositories
           --gerrit:     Create a tarball containing Gerrit repositories
           --github:     Create a tarball containing Github repositories
           --all:        Create a tarball containing all repositories

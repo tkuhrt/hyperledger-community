@@ -69,6 +69,11 @@ explorer_repositories=(
   https://gerrit.hyperledger.org/r/blockchain-explorer
 )
 
+quilt_repositories=(
+  https://github.com/hyperledger/quilt
+  https://github.com/hyperledger/quilt-crypto-conditions
+)
+
 all_repositories=(
   "${fabric_repositories[@]}"
   "${sawtooth_repositories[@]}"
@@ -78,6 +83,7 @@ all_repositories=(
   "${composer_repositories[@]}"
   "${cello_repositories[@]}"
   "${explorer_repositories[@]}"
+  "${quilt_repositories[@]}"
 )
 
 # These two lines look backwards, but they are removing the pattern from the list of all repositories
