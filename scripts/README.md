@@ -103,3 +103,37 @@ NOTE: If no options are specified, it is as if you had specified --all
 NOTE: Multiple repository options can be specified to be included in a single tarball.
 NOTE: --all will override all commands for individual projects.
 ```
+
+## `get_stats.sh`
+Get metrics for the specified source repositories (as defined in `repositories.sh`) using `gitstats`. Will output the results at:
+```
+~/public_html
+```
+### Requirements
+* `git`
+* `gitstats`
+
+### Usage
+This script is used to create HTML output containing metrics for the Hyperledger repositories.
+```
+        get_stats.sh [options]
+        Get repo stats using gitstats
+
+        Options:
+          --fabric:     Get repo stats for Fabric repositories
+          --sawtooth:   Get repo stats for Sawtooth repositories
+          --iroha:      Get repo stats for Iroha repositories
+          --burrow:     Get repo stats for Burrow repositories
+          --indy:       Get repo stats for Indy repositories
+          --composer:   Get repo stats for Composer repositories
+          --cello:      Get repo stats for Cello repositories
+          --explorer:   Get repo stats for Explorer repositories
+          --gerrit:     Get repo stats for Gerrit repositories
+          --github:     Get repo stats for Github repositories
+          --all:        Get repo stats for all repositories
+
+        NOTE: If no options are specified, it is as if you had specified --all
+        NOTE: Multiple repository options can be specified to be included.
+        NOTE: --all will override all commands for individual projects.
+```
+
