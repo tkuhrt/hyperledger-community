@@ -17,7 +17,6 @@ fabric_repositories=(
   https://gerrit.hyperledger.org/r/fabric-chaincode-node
   https://gerrit.hyperledger.org/r/fabric-sdk-rest
   https://gerrit.hyperledger.org/r/fabric-chaincode-java
-  https://gerrit.hyperledger.org/r/fabric-docs
 )
 
 sawtooth_repositories=(
