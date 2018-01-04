@@ -130,6 +130,8 @@ s/rjones-lf@users.noreply.github.com/ry+home+github@walledcity.org/
 s/rjones@linuxfoundation.org/ry+home+github@walledcity.org/
 s/31342446+sergey-shilov@users.noreply.github.com/sergey.shilov@dsr-company.com/
 s/muralisr@us.ibm.com/srinivasan.muralidharan99@gmail.com/
+s/31738106+chenette@users.noreply.github.com/chenette@bitwise.io/
+s/muratovv@users.noreply.github.com/muratovfyodor@yandex.ru/
 /ubuntu@ubuntu-xenial.localdomain/d
 /travis@ibm.com/d
 /evernym-ci@evernym.com/d
