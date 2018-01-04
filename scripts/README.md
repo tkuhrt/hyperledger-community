@@ -21,13 +21,27 @@ TOTAL: <total-count>
 ### Usage
 This script is used to get the number of commits that have occurred against all Hyperledger repositories
 ```
-get_commit_counts.sh [--since mm/dd/yyyy]]
-Get commit counts from all Hyperledger repositories.
+get_commit-counts.sh [--since mm/dd/yyyy] [--until mm/dd/yyyy]
+Get commit count from Hyperledger repositories.
 
 Options:
-  --since: Specify from which date to obtain commits (mm/dd/yyyy).
-           By default obtains commits from the start of the repo.
-  --help:  Shows this help message
+  --fabric:   Include Fabric repositories
+  --sawtooth: Include Sawtooth repositories
+  --iroha:    Include Iroha repositories
+  --burrow:   Include Burrow repositories
+  --indy:     Include Indy repositories
+  --composer: Include Composer repositories
+  --cello:    Include Cello repositories
+  --explorer: Include Explorer repositories
+  --quilt:    Include Quilt repositories
+  --gerrit:   Include Gerrit repositories
+  --github:   Include Github repositories
+  --all:      Include all repositories (default)
+  --since:    Since which date to obtain contributors (mm/dd/yyyy).
+              By default obtains contributors from start of the repo.
+  --until:    Until which date to obtain contributors (mm/dd/yyyy).
+              By default obtains contributors until the end of commits.
+  --help:     Shows this help message
 ```
 
 ## `get_contributors.sh`
@@ -62,6 +76,8 @@ Get contributors from all Hyperledger repositories.
 Options:
   --since: Specify from which date to obtain contributors (mm/dd/yyyy).
            By default obtains contributors from the start of the repo.
+  --until: Specify the date upto which to obtain contributors (mm/dd/yyyy).
+           By default obtains contributors to the end of the repo.
   --help:  Shows this help message
 ```
 
@@ -94,46 +110,14 @@ Options:
   --composer:   Create a tarball containing Composer repositories
   --cello:      Create a tarball containing Cello repositories
   --explorer:   Create a tarball containing Explorer repositories
+  --quilt:      Create a tarball containing Quilt repositories
   --gerrit:     Create a tarball containing Gerrit repositories
   --github:     Create a tarball containing Github repositories
   --all:        Create a tarball containing all repositories
   --no-tarball: Check out files only
 
 NOTE: If no options are specified, it is as if you had specified --all
-NOTE: Multiple repository options can be specified to be included in a single tarball.
+NOTE: Multiple repository options can be specified to be included in a
+      single tarball.
 NOTE: --all will override all commands for individual projects.
 ```
-
-## `get_stats.sh`
-Get metrics for the specified source repositories (as defined in `repositories.sh`) using `gitstats`. Will output the results at:
-```
-~/public_html
-```
-### Requirements
-* `git`
-* `gitstats`
-
-### Usage
-This script is used to create HTML output containing metrics for the Hyperledger repositories.
-```
-        get_stats.sh [options]
-        Get repo stats using gitstats
-
-        Options:
-          --fabric:     Get repo stats for Fabric repositories
-          --sawtooth:   Get repo stats for Sawtooth repositories
-          --iroha:      Get repo stats for Iroha repositories
-          --burrow:     Get repo stats for Burrow repositories
-          --indy:       Get repo stats for Indy repositories
-          --composer:   Get repo stats for Composer repositories
-          --cello:      Get repo stats for Cello repositories
-          --explorer:   Get repo stats for Explorer repositories
-          --gerrit:     Get repo stats for Gerrit repositories
-          --github:     Get repo stats for Github repositories
-          --all:        Get repo stats for all repositories
-
-        NOTE: If no options are specified, it is as if you had specified --all
-        NOTE: Multiple repository options can be specified to be included.
-        NOTE: --all will override all commands for individual projects.
-```
-
