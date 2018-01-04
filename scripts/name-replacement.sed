@@ -98,4 +98,25 @@ s/^bogdan@soramitsu.co.jp|.*$/bogdan@soramitsu.co.jp|Bogdan Vaneev/
 s/^okada@soramitsu.co.jp|.*$/okada@soramitsu.co.jp|Ryu Okada/
 s/^mgutala@dtcc.com|.*$/mgutala@dtcc.com|Mahesh Gutala/
 s/^mwagner@redhat.com|.*$/mwagner@redhat.com|Mark Wagner/
+s/^31738106+chenette@users.noreply.github.com|.*$/31738106+chenette@users.noreply.github.com|Anne Chenette/
+s/^bulat.nasrulin@gmail.com|.*$/bulat.nasrulin@gmail.com|Bulat Nasrulin/
+s/^sappenin@gmail.com|.*$/sappenin@gmail.com|David Fuelling/
+s/^david.paul.dornseifer@sap.com|.*$/david.paul.dornseifer@sap.com|David Dornseifer/
+s/^ellis.44@hotmail.co.uk|.*$/ellis.44@hotmail.co.uk|Ellis Henderson/
+s/^eric.vaughn@blocledger.com|.*$/eric.vaughn@blocledger.com|Eric Vaughn/
+s/^faisal00813@gmail.com|.*$/faisal00813@gmail.com|Mohammad Abdul Sami/
+s/^muratovfyodor@yandex.ru|.*$/muratovfyodor@yandex.ru|Fyodor Muratov/
+s/^kamilsa16@gmail.com|.*$/kamilsa16@gmail.com|Kamil Salakhiev/
+s/^latitia.haskins@gmail.com|.*$/latitia.haskins@gmail.com|Latitia Haskins/
+s/^y-namiki@ak.jp.nec.com|.*$/y-namiki@ak.jp.nec.com|Namiki Yuta/
+s/^n.yushkevich@hotmail.com|.*$/n.yushkevich@hotmail.com|Nikolay Yushkevich/
+s/^thakkarparth007@gmail.com|.*$/thakkarparth007@gmail.com|Parth Thakkar/
+s/^ricjhill@gmail.com|.*$/ricjhill@gmail.com|Richard Hill/
+s/^fx19800215@163.com|.*$/fx19800215@163.com|Robert Feng/
+s/^sergey.minaev@dsr-company.com|.*$/sergey.minaev@dsr-company.com|Sergey Minaev/
+s/^suryalnvs@gmail.com|.*$/suryalnvs@gmail.com|Surya/
+s/^litong01@us.ibm.com|.*$/litong01@us.ibm.com|Tong Li/
+s/^adnan.choudhury@itpeoplecorp.com|.*$/adnan.choudhury@itpeoplecorp.com|Adnan Choudhury/
+s/^adrian@hopebailie.com|.*$/adrian@hopebailie.com|Adrian Hope-Bailie/
+s/^frantic1993@gmail.com|.*$/frantic1993@gmail.com|Andrei Goncharov/
 /^|Import Committer/d

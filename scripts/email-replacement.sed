@@ -5,6 +5,7 @@ s/gundersx@wangrich-mobl.amr.corp.intel.com/agunde@bitwise.io/
 s/gundersx@tdkierna-mobl3.amr.corp.intel.com/agunde@bitwise.io/
 s/johnson.boyd@gmail.com/boydx.johnson@intel.com/
 s/boydjohnson@users.noreply.github.com/boydx.johnson@intel.com/
+s/bjohnson@bitwise.io/boydx.johnson@intel.com/
 s/emilmelnikov@users.noreply.github.com/emilmelnikov@gmail.com/
 s/FarooqKhan@users.noreply.github.com/farooq_m_khan@yahoo.com/
 s/jasonalaw@users.noreply.github.com/jason@evernym.us/
@@ -90,6 +91,7 @@ s/jovfer.s@gmail.com/sergey.minaev@dsr-company.com/
 s/sis@zurich.ibm.com/2-hl-gerrit@0x2c.org/
 s/sheehan@us.ibm.com/sranderson@gmail.com/
 s/jim_the_matrix@hotmail.com/jzhang@us.ibm.com/
+s/jimzhang@Jims-MacBook-Pro.local/jzhang@us.ibm.com/
 s/ccchenbj@cn.ibm.com/ck-cc@hotmail.com/
 s/ray@hyperchain.cn/oldsharp@gmail.com/
 s/stasytar@gmail.com/anastasiya.tarasova@dsr-company.com/
@@ -119,6 +121,15 @@ s/sate@Takumis-MacBook-Pro.local/yamashita@soramitsu.co.jp/
 s/nathan.george@evernym.com/nathan.george@sovrin.org/
 s/warchantua@gmail.com/bogdan@soramitsu.co.jp/
 s/captainludd@users.noreply.github.com/ricjhill@gmail.com/
+s/33458498+anikitinDSR@users.noreply.github.com/andrew.nikitin@dsr-corporation.com/
+s/skibz@users.noreply.github.com/antony@mycosentino.com/
+s/bdot@users.noreply.github.com/techie.bharat@gmail.com/
+s/30467939+hannahrayner@users.noreply.github.com/hannah.rayner@ibm.com/
+s/harsha544@users.noreply.github.com/krishvoor@in.ibm.com/
+s/rjones-lf@users.noreply.github.com/ry+home+github@walledcity.org/
+s/rjones@linuxfoundation.org/ry+home+github@walledcity.org/
+s/31342446+sergey-shilov@users.noreply.github.com/sergey.shilov@dsr-company.com/
+s/muralisr@us.ibm.com/srinivasan.muralidharan99@gmail.com/
 /ubuntu@ubuntu-xenial.localdomain/d
 /travis@ibm.com/d
 /evernym-ci@evernym.com/d
