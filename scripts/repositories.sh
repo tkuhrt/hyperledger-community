@@ -32,15 +32,10 @@ sawtooth_repositories=(
 
 iroha_repositories=(
   https://github.com/hyperledger/iroha.git
-  https://github.com/hyperledger/iroha-android.git
-  https://github.com/hyperledger/iroha-ios.git
-  https://github.com/hyperledger/iroha-python.git
   https://github.com/hyperledger/iroha-api.git
-  https://github.com/hyperledger/iroha-javascript.git
   https://github.com/hyperledger/iroha-scala.git
-  https://github.com/hyperledger/iroha-dotnet.git
-  https://github.com/hyperledger/iroha-network-tools.git
   https://github.com/hyperledger/iroha-ed25519.git
+  https://github.com/hyperledger/iroha-dotnet.git
 )
 
 burrow_repositories=(
