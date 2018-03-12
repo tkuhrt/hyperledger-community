@@ -1,16 +1,17 @@
 #!/bin/bash
 
-script_dir=`dirname $0`
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+  DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+script_dir="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-if [[ "$script_dir" == "." ]]
-then
-  script_dir=$PWD
-fi
-
-. `dirname $0`/repositories.sh
+. ${script_dir}/repositories.sh
 
 #Default variables
-repositories="${all_repositories[@]}" 
+repositories="${all_repositories[@]}"
 filename="hyperledger-loc"
 since=""
 
