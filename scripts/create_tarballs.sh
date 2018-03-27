@@ -1,6 +1,14 @@
 #!/bin/bash
 
-. `dirname $0`/repositories.sh
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+  DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+script_dir="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+. ${script_dir}/repositories.sh
 
 #Default variables
 repositories=()
@@ -62,6 +70,18 @@ case $key in
         filename+="-explorer"
       fi
     ;;
+    --quilt)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${quilt_repositories[@]}" )
+        filename+="-quilt"
+      fi
+    ;;
+    --caliper)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${caliper_repositories[@]}" )
+        filename+="-caliper"
+      fi
+    ;;
     --gerrit)
       if [[ "$all_specified" == FALSE ]] ; then
         repositories+=( "${gerrit_repositories[@]}" )
@@ -72,12 +92,6 @@ case $key in
       if [[ "$all_specified" == FALSE ]] ; then
         repositories+=( "${github_repositories[@]}" )
         filename+="-github"
-      fi
-    ;;
-    --quilt)
-      if [[ "$all_specified" == FALSE ]] ; then
-        repositories+=( "${quilt_repositories[@]}" )
-        filename+="-quilt"
       fi
     ;;
     --all)
@@ -103,6 +117,7 @@ case $key in
           --cello:      Create a tarball containing Cello repositories
           --explorer:   Create a tarball containing Explorer repositories
           --quilt:      Create a tarball containing Quilt repositories
+          --caliper:    Create a tarball containing Caliper repositories
           --gerrit:     Create a tarball containing Gerrit repositories
           --github:     Create a tarball containing Github repositories
           --all:        Create a tarball containing all repositories

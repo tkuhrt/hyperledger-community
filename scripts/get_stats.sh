@@ -1,6 +1,14 @@
 #!/bin/bash
 
-. `dirname $0`/repositories.sh
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+  DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+script_dir="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+. ${script_dir}/repositories.sh
 
 #Default variables
 repositories=()
@@ -61,6 +69,18 @@ case $key in
         filename+="-explorer"
       fi
     ;;
+    --quilt)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${quilt_repositories[@]}" )
+        filename+="-quilt"
+      fi
+    ;;
+    --caliper)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${caliper_repositories[@]}" )
+        filename+="-caliper"
+      fi
+    ;;
     --gerrit)
       if [[ "$all_specified" == FALSE ]] ; then
         repositories+=( "${gerrit_repositories[@]}" )
@@ -98,6 +118,8 @@ case $key in
           --composer:   Get repo stats for Composer repositories
           --cello:      Get repo stats for Cello repositories
           --explorer:   Get repo stats for Explorer repositories
+          --quilt:      Get repo stats for Quilt repositories
+          --caliper:    Get repo stats for Caliper repositories
           --gerrit:     Get repo stats for Gerrit repositories
           --github:     Get repo stats for Github repositories
           --all:        Get repo stats for all repositories

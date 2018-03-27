@@ -77,6 +77,12 @@ case $key in
         filename+="-quilt"
       fi
     ;;
+    --caliper)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${caliper_repositories[@]}" )
+        filename+="-caliper"
+      fi
+    ;;
     --gerrit)
       if [[ "$all_specified" == FALSE ]] ; then
         repositories+=( "${gerrit_repositories[@]}" )
@@ -105,14 +111,27 @@ case $key in
     --help)
       cat << EOM
         get_contributors.sh [--since mm/dd/yyyy] [--until mm/dd/yyyy]
-        Get contributors from all Hyperledger repositories.
+        Get contributors from Hyperledger repositories.
 
         Options:
-          --since: Specify from which date to obtain contributors (mm/dd/yyyy).
-                   By default obtains contributors from the start of the repo.
-          --until: Specify the date upto which to obtain contributors (mm/dd/yyyy).
-                   By default obtains contributors to the end of the repo.
-          --help:  Shows this help message
+          --fabric:   Include Fabric repositories
+          --sawtooth: Include Sawtooth repositories
+          --iroha:    Include Iroha repositories
+          --burrow:   Include Burrow repositories
+          --indy:     Include Indy repositories
+          --composer: Include Composer repositories
+          --cello:    Include Cello repositories
+          --explorer: Include Explorer repositories
+          --quilt:    Include Quilt repositories
+          --caliper:  Include Caliper repositories
+          --gerrit:   Include Gerrit repositories
+          --github:   Include Github repositories
+          --all:      Include all repositories (default)
+          --since:    Includes commits more recent than this date (mm/dd/yyyy).
+                      By default starts from the start of the repo.
+          --until:    Includes commits older than this date (mm/dd/yyyy).
+                      By default ends at the end of the repo.
+          --help:     Shows this help message
 EOM
     exit;
     ;;
