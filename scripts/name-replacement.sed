@@ -8,10 +8,10 @@ s/^andkononykhin@gmail.com|.*$/andkononykhin@gmail.com|Andrey Kononykhin/
 s/^andreas@monax.io|.*$/andreas@monax.io|Andreas Olofsson/
 s/^artem.ivanov@dsr-company.com|.*$/artem.ivanov@dsr-company.com|Artem Ivanov/
 s/^a_o-dowd@uk.ibm.com|.*$/a_o-dowd@uk.ibm.com|Anthony O'Dowd/
-s/^binhn@us.ibm.com|.*$/binhn@us.ibm.com|Binh Q. Nguyen/
+s/^seeyoucansayo@gmail.com|.*$/seeyoucansayo@gmail.com|Binh Nguyen/
 s/^boydx.johnson@intel.com|.*$/boydx.johnson@intel.com|Boyd Johnson/
 s/^cdaughtr@us.ibm.com|.*$/cdaughtr@us.ibm.com|Caroline Daughtrey/
-s/^cian.montgomery@intel.com|.*$/cian.montgomery@intel.com|Cian Montgomery/
+s/^cian@cianmontgomery.com|.*$/cian@cianmontgomery.com|Cian Montgomery/
 s/^ck-cc@hotmail.com|.*$/ck-cc@hotmail.com|Chang Chen/
 s/^co.liang.ol@gmail.com|.*$/co.liang.ol@gmail.com|lexon/
 s/^cr22rc@gmail.com|rickr$/cr22rc@gmail.com|Rick Rine/
@@ -98,7 +98,7 @@ s/^bogdan@soramitsu.co.jp|.*$/bogdan@soramitsu.co.jp|Bogdan Vaneev/
 s/^okada@soramitsu.co.jp|.*$/okada@soramitsu.co.jp|Ryu Okada/
 s/^mgutala@dtcc.com|.*$/mgutala@dtcc.com|Mahesh Gutala/
 s/^mwagner@redhat.com|.*$/mwagner@redhat.com|Mark Wagner/
-s/^31738106+chenette@users.noreply.github.com|.*$/31738106+chenette@users.noreply.github.com|Anne Chenette/
+s/^chenette@bitwise.io|.*$/chenette@bitwise.io|Anne Chenette/
 s/^bulat.nasrulin@gmail.com|.*$/bulat.nasrulin@gmail.com|Bulat Nasrulin/
 s/^sappenin@gmail.com|.*$/sappenin@gmail.com|David Fuelling/
 s/^david.paul.dornseifer@sap.com|.*$/david.paul.dornseifer@sap.com|David Dornseifer/
@@ -119,4 +119,12 @@ s/^litong01@us.ibm.com|.*$/litong01@us.ibm.com|Tong Li/
 s/^adnan.choudhury@itpeoplecorp.com|.*$/adnan.choudhury@itpeoplecorp.com|Adnan Choudhury/
 s/^adrian@hopebailie.com|.*$/adrian@hopebailie.com|Adrian Hope-Bailie/
 s/^frantic1993@gmail.com|.*$/frantic1993@gmail.com|Andrei Goncharov/
+s/^chrism@fast.au.fujitsu.com|.*$/chrism@fast.au.fujitsu.com|Chirs Murphy/
+s/^andrew.nikitin@dsr-corporation.com|.*$/andrew.nikitin@dsr-corporation.com|Andrew Nikitin/
+s/^david-khala@hotmail.com|.*$/david-khala@hotmail.com|Yuxiang Liu/
+s/^Nishi.Nidamarty@itpeoplecorp.com|.*$/Nishi.Nidamarty@itpeoplecorp.com|Nishi Nidamarty/
+s/^pavondes@gmail.com|.*$/pavondes@gmail.com|Pascal Avondes/
+s/^mahoney@uk.ibm.com|.*$/mahoney@uk.ibm.com|Paul O'Mahoney/
+s/^sudheesh1995@outlook.com|.*$/sudheesh1995@outlook.com|Sudheesh Singanamalla/
+s/^zhaochy_2015@hotmail.com|.*$/zhaochy_2015@hotmail.com|Zhao Chaoyi/
 /^|Import Committer/d
