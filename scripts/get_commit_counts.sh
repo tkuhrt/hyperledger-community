@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 
 SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
@@ -101,6 +100,10 @@ case $key in
       filename+="-all"
       repositories="${all_repositories[@]}"
     ;;
+    --output-dir)
+      output_dir=$2
+      shift # past argument or value. 2nd shift below
+    ;;
     --since)
       since="$2"
       shift # past argument or value. 2nd shift below
@@ -132,6 +135,7 @@ case $key in
                       By default starts from the start of the repo.
           --until:    Includes commits older than this date (mm/dd/yyyy).
                       By default ends at the end of the repo.
+          --output-dir <dir>: Where should output be placed. (Default: /tmp)
           --help:     Shows this help message
 EOM
     exit;
@@ -152,9 +156,12 @@ then
 fi
 
 today=`date -u +%Y-%m-%d-%H-%M-%S`
-outdir=/tmp/${filename}-${today}
-mkdir -p ${outdir}/source
-cd ${outdir}/source
+outdir="${output_dir}"/${filename}-${today}
+mkdir -p "${outdir}"
+
+srcdir=/tmp/${filename}-${today}
+mkdir -p ${srcdir}/source
+cd ${srcdir}/source
 
 for i in ${repositories[@]};
 do
@@ -163,10 +170,8 @@ do
   repo=`basename -s .git $i`
   cd ${repo}
 
-  outbase=${outdir}/${repo}
-
   # Get count of commits
-  git rev-list HEAD --count ${since:+--since=${since}} ${until:+--until=${until}} > ${outbase}.count
+  git rev-list HEAD --count ${since:+--since=${since}} ${until:+--until=${until}} > ${srcdir}/${repo}.count.txt
 
   cd ..
 done
@@ -174,15 +179,15 @@ done
 cd ..
 
 count=0
-for f in *.count
+for f in ${srcdir}/*.count.txt
 do
   c=`cat $f`
-  echo $f $c >> commit-count.total
+  echo `basename $f .count.txt` $c >> "${outdir}"/commit-count.total.txt
   count=$((count+c))
 done
 
-echo "TOTAL=$count" >> commit-count.total
+echo "TOTAL=$count" >> "${outdir}"/commit-count.total.txt
 
-cat commit-count.total
+cat "${outdir}"/commit-count.total.txt
 
-rm -fr ${outdir}/source
+rm -fr ${srcdir}/source

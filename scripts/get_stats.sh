@@ -12,8 +12,9 @@ script_dir="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 #Default variables
 repositories=()
-filename="hyperledger-source"
+filename="hyperledger-stats"
 all_specified=FALSE
+output_dir=/tmp
 
 # Handle command line arguments
 while [[ $# -gt 0 ]]
@@ -93,16 +94,14 @@ case $key in
         filename+="-github"
       fi
     ;;
-    --interledger)
-      if [[ "$all_specified" == FALSE ]] ; then
-        repositories+=( "${interledger_repositories[@]}" )
-        filename+="-interledger"
-      fi
-    ;;
     --all)
       all_specified=TRUE
       filename+="-all"
       repositories="${all_repositories[@]}"
+    ;;
+    --output-dir)
+      output_dir=$2
+      shift # past argument or value. 2nd shift below
     ;;
     --help)
       cat << EOM
@@ -123,6 +122,7 @@ case $key in
           --gerrit:     Get repo stats for Gerrit repositories
           --github:     Get repo stats for Github repositories
           --all:        Get repo stats for all repositories
+          --output-dir <dir>: Where should output be placed. (Default: /tmp)
 
         NOTE: If no options are specified, it is as if you had specified --all
         NOTE: Multiple repository options can be specified to be included.
@@ -146,15 +146,20 @@ then
 fi
 
 today=`date -u +%Y-%m-%d-%H-%M-%S`
-mkdir -p /tmp/${filename}-${today}
-cd /tmp/${filename}-${today}
+mkdir -p "${output_dir}"/${filename}-${today}
+
+srcdir=/tmp/${filename}-${today}
+mkdir -p ${srcdir}/source
+cd ${srcdir}/source
 
 for i in ${repositories[@]};
 do
 echo "Processing $i..."
 git clone $i
 BASE=`basename $i .git`
-gitstats $BASE ~/public_html/$BASE
+gitstats $BASE "${output_dir}"/${filename}-${today}/$BASE
 done
 
 cd ..
+
+rm -fr ${srcdir}/source

@@ -12,8 +12,9 @@ script_dir="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 #Default variables
 repositories="${all_repositories[@]}"
-filename="hyperledger-loc"
+filename="hyperledger-lines-of-code"
 since=""
+output_dir=/tmp
 
 # Handle command line arguments
 while [[ $# -gt 0 ]]
@@ -21,12 +22,17 @@ do
 key="$1"
 
 case $key in
+    --output-dir)
+      output_dir=$2
+      shift # past argument or value. 2nd shift below
+    ;;
     --help)
       cat << EOM
         get_loc.sh
         Get the lines of code from all Hyperledger repositories.
 
         Options:
+          --output-dir <dir>: Where should output be placed. (Default: /tmp)
           --help:  Shows this help message
 EOM
     exit;
@@ -40,12 +46,14 @@ shift # past argument or value
 done
 
 today=`date -u +%Y-%m-%d-%H-%M-%S`
-outdir=/tmp/${filename}-${today}
-outfile=${outdir}/loc.csv
-mkdir -p ${outdir}/source
-cd ${outdir}/source
+outfile="${output_dir}"/${filename}-${today}/loc.csv
+mkdir -p "${output_dir}"/${filename}-${today}
 
-cat "Repository,Number of Files,Lines of Code" > ${outfile}
+echo "Repository,Number of Files,Lines of Code" > "${outfile}"
+
+srcdir=/tmp/${filename}-${today}
+mkdir -p ${srcdir}/source
+cd ${srcdir}/source
 
 for i in ${repositories[@]};
 do
@@ -61,4 +69,6 @@ echo "$repo,$out" >> ${outfile}
 cd ..
 done
 
-rm -fr ${outdir}/source
+cd ..
+
+rm -fr ${srcdir}/source

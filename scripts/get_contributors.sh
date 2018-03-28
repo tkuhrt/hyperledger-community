@@ -16,6 +16,7 @@ filename="hyperledger-contributors"
 since=""
 until=""
 all_specified=FALSE
+output_dir=/tmp
 
 # Handle command line arguments
 while [[ $# -gt 0 ]]
@@ -108,6 +109,10 @@ case $key in
       until="$2"
       shift # past argument or value. 2nd shift below
       ;;
+    --output-dir)
+      output_dir=$2
+      shift # past argument or value. 2nd shift below
+    ;;
     --help)
       cat << EOM
         get_contributors.sh [--since mm/dd/yyyy] [--until mm/dd/yyyy]
@@ -131,6 +136,7 @@ case $key in
                       By default starts from the start of the repo.
           --until:    Includes commits older than this date (mm/dd/yyyy).
                       By default ends at the end of the repo.
+          --output-dir <dir>: Where should output be placed. (Default: /tmp)
           --help:     Shows this help message
 EOM
     exit;
@@ -151,9 +157,12 @@ then
 fi
 
 today=`date -u +%Y-%m-%d-%H-%M-%S`
-outdir=/tmp/${filename}-${today}
-mkdir -p ${outdir}/source
-cd ${outdir}/source
+outdir="${output_dir}"/${filename}-${today}
+mkdir -p "${outdir}"/working
+
+srcdir=/tmp/${filename}-${today}
+mkdir -p ${srcdir}/source
+cd ${srcdir}/source
 
 for i in ${repositories[@]};
 do
@@ -162,39 +171,34 @@ git clone $i
 repo=`basename -s .git $i`
 cd ${repo}
 
-outbase=${outdir}/${repo}
-
 # Get emails and names of contributors of commits from the git log
-git log --format='%aE|%aN' ${since:+--since=${since}} ${until:+--until=${until}} > ${outbase}.gitlog
+git log --format='%aE|%aN' ${since:+--since=${since}} ${until:+--until=${until}} > "${outdir}"/working/${repo}.gitlog
 
 # Replace duplicate emails with preferred email
-sed -f ${script_dir}/email-replacement.sed -f ${script_dir}/name-replacement.sed ${outbase}.gitlog > ${outbase}.contributors
+sed -f ${script_dir}/email-replacement.sed -f ${script_dir}/name-replacement.sed "${outdir}"/working/${repo}.gitlog > "${outdir}"/working/${repo}.contributors
 
 # Sort contributors based on email (1st key) ignoring case
-LC_ALL=C sort -i -t "|" -k 1 -u -f ${outbase}.contributors > ${outbase}.sorted
+LC_ALL=C sort -i -t "|" -k 1 -u -f "${outdir}"/working/${repo}.contributors > "${outdir}"/working/${repo}.sorted
 
 # Get unique contributors based on email (1st key) ignoring case
-#awk '!arr[tolower($1)]++' ${outbase}.sorted > ${outbase}.uniq-contributors
 awk 'BEGIN { FS = "|" }
      tolower($1)!=key { if (key != "") print out; key=tolower($1); out=$0; next }
      { out=out","$2 }
-     END { print out }' ${outbase}.sorted > ${outbase}.uniq-contributors
+     END { print out }' "${outdir}"/working/${repo}.sorted > "${outdir}"/${repo}.uniq-contributors.csv
 
 cd ..
 done
 
-#LC_ALL=C sort -i -t , -k 1 -u -f ${outdir}/*.uniq-contributors | awk '!arr[tolower($1)]++' > ${outdir}/contributors
-
-LC_ALL=C sort -i -t "|" -k 1 -u -f ${outdir}/*.sorted | awk 'BEGIN { FS = "|" }
+LC_ALL=C sort -i -t "|" -k 1 -u -f "${outdir}"/working/*.sorted | awk 'BEGIN { FS = "|" }
   tolower($1)!=key { if (key != "") print out; key=tolower($1); out=$0; next }
   { out=out","$2 }
-  END { print out }' > ${outdir}/uniq-emails
+  END { print out }' > "${outdir}"/working/uniq-emails
 
-LC_ALL=C sort -i -t "|" -k 2 -f ${outdir}/uniq-emails | awk 'BEGIN { FS = "|" }
+LC_ALL=C sort -i -t "|" -k 2 -f "${outdir}"/working/uniq-emails | awk 'BEGIN { FS = "|" }
   tolower($2)!=key { if (key != "") print out; key=tolower($2); out=$0; next }
   {out=$1","out }
-  END { print out }' > ${outdir}/contributors
+  END { print out }' > "${outdir}"/contributors.csv
 
-#rm -fr ${outdir}/source
+echo "since=${since:+${since}} through until=${until:+${until}}" > "${outdir}"/arguments.txt
 
-echo "since=${since:+${since}} through until=${until:+${until}}" > ${outdir}/arguments
+rm -fr ${srcdir}/source

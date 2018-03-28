@@ -15,6 +15,7 @@ repositories=()
 filename="hyperledger-source"
 all_specified=FALSE
 tarball=TRUE
+output_dir=/tmp
 
 # Handle command line arguments
 while [[ $# -gt 0 ]]
@@ -102,6 +103,10 @@ case $key in
     --no-tarball)
       tarball=FALSE
     ;;
+    --output-dir)
+      output_dir=$2
+      shift # past argument or value. 2nd shift below
+    ;;
     --help)
       cat << EOM
         create_tarball.sh [options]
@@ -122,6 +127,8 @@ case $key in
           --github:     Create a tarball containing Github repositories
           --all:        Create a tarball containing all repositories
           --no-tarball: Check out files only
+          --output-dir <dir>: Where should output be placed. (Default: /tmp)
+          --help:       Shows this help message
 
         NOTE: If no options are specified, it is as if you had specified --all
         NOTE: Multiple repository options can be specified to be included in a
@@ -146,8 +153,8 @@ then
 fi
 
 today=`date -u +%Y-%m-%d-%H-%M-%S`
-mkdir -p /tmp/${filename}-${today}
-cd /tmp/${filename}-${today}
+mkdir -p "${output_dir}"/${filename}-${today}
+cd "${output_dir}"/${filename}-${today}
 
 for i in ${repositories[@]};
 do
