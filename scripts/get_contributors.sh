@@ -184,8 +184,17 @@ LC_ALL=C sort -i -t "|" -k 1 -u -f "${outdir}"/working/${repo}.contributors > "$
 awk 'BEGIN { FS = "|" }
      tolower($1)!=key { if (key != "") print out; key=tolower($1); out=$0; next }
      { out=out","$2 }
-     END { print out }' "${outdir}"/working/${repo}.sorted > "${outdir}"/${repo}.uniq-contributors.csv
+     END { print out }' "${outdir}"/working/${repo}.sorted > "${outdir}"/working/${repo}.uniq-contributors
 
+# Flip commas and pipes
+awk 'BEGIN { FS = "|" }
+     {
+       col1=$1
+       gsub(/,/,"|",col1)
+       col2=$2
+       gsub(/,/,"|",col2)
+       print col1 "," col2
+     }' "${outdir}"/working/${repo}.uniq-contributors > "${outdir}"/${repo}.uniq-contributors.csv
 cd ..
 done
 
@@ -197,7 +206,17 @@ LC_ALL=C sort -i -t "|" -k 1 -u -f "${outdir}"/working/*.sorted | awk 'BEGIN { F
 LC_ALL=C sort -i -t "|" -k 2 -f "${outdir}"/working/uniq-emails | awk 'BEGIN { FS = "|" }
   tolower($2)!=key { if (key != "") print out; key=tolower($2); out=$0; next }
   {out=$1","out }
-  END { print out }' > "${outdir}"/contributors.csv
+  END { print out }' > "${outdir}"/working/contributors
+
+# Flip commas and pipes
+awk 'BEGIN { FS = "|" }
+     {
+       col1=$1
+       gsub(/,/,"|",col1)
+       col2=$2
+       gsub(/,/,"|",col2)
+       print col1 "," col2
+     }' "${outdir}"/working/contributors > "${outdir}"/contributors.csv
 
 echo "since=${since:+${since}} through until=${until:+${until}}" > "${outdir}"/arguments.txt
 
