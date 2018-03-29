@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
   DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
@@ -64,7 +66,7 @@ cd ${repo}
 
 hash=`git hash-object -t tree /dev/null`
 out=`git diff --shortstat $hash | sed -e "s/ files changed, /,/" -e "s/ insertions.*$//"`
-echo "$repo,$out" >> ${outfile}
+echo "$repo,$out" >> "${outfile}"
 
 cd ..
 done
