@@ -63,7 +63,7 @@ repo=`basename -s .git $i`
 cd ${repo}
 
 hash=`git hash-object -t tree /dev/null`
-out=`git diff --shortstat $hash | sed -e "s/ files changed, /,/" -e "s/ insertions.*$//"`
+out=`git diff --shortstat $hash | sed -e "s/ file[s]* changed, /,/" -e "s/ insertion[s]*.*$//"`
 echo "$repo,$out" >> "${outfile}"
 
 cd ..
