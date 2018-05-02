@@ -153,8 +153,9 @@ then
 fi
 
 today=`date -u +%Y-%m-%d-%H-%M-%S`
-mkdir -p "${output_dir}"/${filename}-${today}
-cd "${output_dir}"/${filename}-${today}
+today_date_only=`date -u +%Y-%m-%d`
+mkdir -p /tmp/${filename}-${today}
+cd /tmp/${filename}-${today}
 
 for i in ${repositories[@]};
 do
@@ -167,3 +168,6 @@ if [[ "$tarball" == TRUE ]] ; then
   tar czvf ${filename}-${today}.tar.gz --exclude .git ${filename}-${today}
   rm -fr ${filename}-${today}
 fi
+
+mkdir -p "${output_dir}"/${today_date_only}/tarballs
+mv ${filename}-${today}.tar.gz "${output_dir}"/${today_date_only}/tarballs

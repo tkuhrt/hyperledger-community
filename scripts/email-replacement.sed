@@ -140,6 +140,8 @@ s/binh1010010110@gmail.com/seeyoucansayo@gmail.com/
 s/ckochenower@users.noreply.github.com/corin.kochenower@evernym.com/
 s/skhoroshavin@users.noreply.github.com/sergey.khoroshavin@dsr-corporation.com/
 s/Toktar@users.noreply.github.com/rmtoktar@gmail.com/
+s/kdenhartog@users.noreply.github.com/kdenhar@gmail.com/
+s/36847043+igor-egorov@users.noreply.github.com/igor@soramitsu.co.jp/
 /ubuntu@ubuntu-xenial.localdomain/d
 /travis@ibm.com/d
 /evernym-ci@evernym.com/d
@@ -147,3 +149,4 @@ s/Toktar@users.noreply.github.com/rmtoktar@gmail.com/
 /collab-it+hyp+ci@linuxfoundation.org/d
 /noreply@travis.ibm.com/d
 /noreply@ibm.com/d
+/github@fabric-composer.org/d

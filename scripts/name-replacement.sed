@@ -127,4 +127,10 @@ s/^pavondes@gmail.com|.*$/pavondes@gmail.com|Pascal Avondes/
 s/^mahoney@uk.ibm.com|.*$/mahoney@uk.ibm.com|Paul O'Mahoney/
 s/^sudheesh1995@outlook.com|.*$/sudheesh1995@outlook.com|Sudheesh Singanamalla/
 s/^zhaochy_2015@hotmail.com|.*$/zhaochy_2015@hotmail.com|Zhao Chaoyi/
+s/^kdenhar@gmail.com|.*$/kdenhar@gmail.com|Kyle Den Hartog/
+s/^zhouhaojun@huawei.com|.*$/zhouhaojun@huawei.com|Haojun Zhou/
+s/^lujjiang@cn.ibm.com|.*$/lujjiang@cn.ibm.com|Sally/
+s/^vdrobny@yandex.ru|.*$/vdrobny@yandex.ru|Victor Drobny/
+s/^wtlahti@us.ibm.com|.*$/wtlahti@us.ibm.com|Will Lahti/
+s/^Alexey.N.Chernyshov@gmail.com|.*$/Alexey.N.Chernyshov@gmail.com|Alexey Chernyshov/
 /^|Import Committer/d
