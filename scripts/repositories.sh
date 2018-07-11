@@ -25,9 +25,21 @@ sawtooth_repositories=(
   https://github.com/hyperledger/sawtooth-supply-chain.git
   https://github.com/hyperledger/sawtooth-seth.git
   https://github.com/hyperledger/sawtooth-marketplace.git
-  https://github.com/hyperledger/sawtooth-hyper-directory.git
+  https://github.com/hyperledger/sawtooth-next-directory.git
   https://github.com/hyperledger/sawtooth-explorer.git
   https://github.com/hyperledger/sawtooth-private-utxo.git
+  https://github.com/hyperledger/sawtooth-sabre.git
+  https://github.com/hyperledger/sawtooth-sdk-go.git
+  https://github.com/hyperledger/sawtooth-sdk-go.git
+  https://github.com/hyperledger/education-sawtooth-simple-supply.git
+  https://github.com/hyperledger/sawtooth-sdk-java.git
+  https://github.com/hyperledger/sawtooth-sdk-dotnet.git
+  https://github.com/hyperledger/sawtooth-sdk-javascript.git
+  https://github.com/hyperledger/sawtooth-sdk-cxx.git
+  https://github.com/hyperledger/sawtooth-poet.git
+  https://github.com/hyperledger/sawtooth-ansible.git
+  https://github.com/hyperledger/sawtooth-website.git
+  https://github.com/hyperledger/sawtooth-raft.git
 )
 
 iroha_repositories=(

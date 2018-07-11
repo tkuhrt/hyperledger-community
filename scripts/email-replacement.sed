@@ -66,7 +66,7 @@ s/nick-drozd@users.noreply.github.com/drozd@bitwise.io/
 s/nicholasx.drozd@intel.com/drozd@bitwise.io/
 s/toddx.ojala@intel.com/todd@bitwise.io/
 s/avkrishnan@users.noreply.github.com/avkrishnan@ieee.org/
-s/danscode@selman.org/daniel.selman@uk.ibm.com/
+s/daniel.selman@uk.ibm.com/danscode@selman.org/
 s/jamesx.mitchell@intel.com/mitchell@bitwise.io/
 s/kostas@gmail.com/kostas@christidis.io/
 s/luckychess@users.noreply.github.com/konstantin@soramitsu.co.jp/
@@ -142,6 +142,10 @@ s/skhoroshavin@users.noreply.github.com/sergey.khoroshavin@dsr-corporation.com/
 s/Toktar@users.noreply.github.com/rmtoktar@gmail.com/
 s/kdenhartog@users.noreply.github.com/kdenhar@gmail.com/
 s/36847043+igor-egorov@users.noreply.github.com/igor@soramitsu.co.jp/
+s/35696678+erin-hughes@users.noreply.github.com/Erin.Hughes@ibm.com/
+s/31096144+nicolapaoli@users.noreply.github.com/nicola@aid.technology/
+s/srottem@users.noreply.github.com/s.rottem@gmail.com/
+s/axel.nennker@telekom.de/axel@nennker.de/
 /ubuntu@ubuntu-xenial.localdomain/d
 /travis@ibm.com/d
 /evernym-ci@evernym.com/d
@@ -150,3 +154,4 @@ s/36847043+igor-egorov@users.noreply.github.com/igor@soramitsu.co.jp/
 /noreply@travis.ibm.com/d
 /noreply@ibm.com/d
 /github@fabric-composer.org/d
+/you@example.com/d

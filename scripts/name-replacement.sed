@@ -133,4 +133,17 @@ s/^lujjiang@cn.ibm.com|.*$/lujjiang@cn.ibm.com|Sally/
 s/^vdrobny@yandex.ru|.*$/vdrobny@yandex.ru|Victor Drobny/
 s/^wtlahti@us.ibm.com|.*$/wtlahti@us.ibm.com|Will Lahti/
 s/^Alexey.N.Chernyshov@gmail.com|.*$/Alexey.N.Chernyshov@gmail.com|Alexey Chernyshov/
+s/^RYAN_BANKS@CRGL-THIRDPARTY.COM|.*$/RYAN_BANKS@CRGL-THIRDPARTY.COM|Ryan Banks/
+s/^vladimirshishkinwork@gmail.com|.*$/vladimirshishkinwork@gmail.com|Vladimir Shishkin/
+s/^vladimir.shishkin@dsr-company.com|.*$/vladimir.shishkin@dsr-company.com|Vladimir Shishkin/
+s/^zach@bluecollarcoding.ca|.*$/zach@bluecollarcoding.ca|Zach Ramsay/
+s/^Nishi.Nidamarty@itpeoplecorp.com|.*$/Nishi.Nidamarty@itpeoplecorp.com|Nishi Nidamarty/
+s/^andrew_coleman@uk.ibm.com|.*$/andrew_coleman@uk.ibm.com|Andrew Coleman/
+s/^bluhmdan@gmail.com|.*$/bluhmdan@gmail.com|bluhmdan@gmail.com|Daniel Bluhm/
+s/^daniel.anderson@intel.com|.*$/daniel.anderson@intel.com|Daniel Anderson/
+s/^gennady@il.ibm.com|.*$/gennady@il.ibm.com|Gennady Laventman/
+s/^lindsellgeorge@gmail.com|.*$/lindsellgeorge@gmail.com|George Lindsell/
+s/^nfrunza@gmail.com|.*$/nfrunza@gmail.com|Nik Frunza/
+s/^olga.zheregelya@dsr-company.com|.*$/olga.zheregelya@dsr-company.com|Olga Zheregelya/
+s/Erin.Hughes@ibm.com|.*$/Erin.Hughes@ibm.com|Erin Hughes/
 /^|Import Committer/d
