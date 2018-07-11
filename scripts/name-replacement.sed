@@ -146,4 +146,6 @@ s/^lindsellgeorge@gmail.com|.*$/lindsellgeorge@gmail.com|George Lindsell/
 s/^nfrunza@gmail.com|.*$/nfrunza@gmail.com|Nik Frunza/
 s/^olga.zheregelya@dsr-company.com|.*$/olga.zheregelya@dsr-company.com|Olga Zheregelya/
 s/Erin.Hughes@ibm.com|.*$/Erin.Hughes@ibm.com|Erin Hughes/
+s/mgisi@corp.ad.wrs.com|.*$/mgisi@corp.ad.wrs.com|Mark Gisi/
+s/hart.montgomery@gmail.com|.*$/hart.montgomery@gmail.com|Hart Montgomery/
 /^|Import Committer/d

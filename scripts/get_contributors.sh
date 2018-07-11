@@ -84,6 +84,18 @@ case $key in
         filename+="-caliper"
       fi
     ;;
+    --labs)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${labs_repositories[@]}" )
+        filename+="-labs"
+      fi
+    ;;
+    --other)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${other_repositories[@]}" )
+        filename+="-other"
+      fi
+    ;;
     --gerrit)
       if [[ "$all_specified" == FALSE ]] ; then
         repositories+=( "${gerrit_repositories[@]}" )
@@ -129,9 +141,12 @@ case $key in
           --explorer: Include Explorer repositories
           --quilt:    Include Quilt repositories
           --caliper:  Include Caliper repositories
+          --labs:     Include Labs repositories
+          --other:    Include Other repositories
           --gerrit:   Include Gerrit repositories
           --github:   Include Github repositories
-          --all:      Include all repositories (default)
+          --all:      Include all project repositories.
+                      Does not include labs or other repositories. (default)
           --since:    Includes commits more recent than this date (mm/dd/yyyy).
                       By default starts from the start of the repo.
           --until:    Includes commits older than this date (mm/dd/yyyy).
