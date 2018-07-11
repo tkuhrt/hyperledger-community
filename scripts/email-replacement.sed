@@ -147,6 +147,7 @@ s/31096144+nicolapaoli@users.noreply.github.com/nicola@aid.technology/
 s/srottem@users.noreply.github.com/s.rottem@gmail.com/
 s/axel.nennker@telekom.de/axel@nennker.de/
 s/MarkGisi@users.noreply.github.com/mgisi@corp.ad.wrs.com/
+s/mic.bowman@intel.com/cmickeyb@gmail.com/
 /ubuntu@ubuntu-xenial.localdomain/d
 /travis@ibm.com/d
 /evernym-ci@evernym.com/d

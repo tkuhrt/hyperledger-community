@@ -16,7 +16,7 @@ s/^ck-cc@hotmail.com|.*$/ck-cc@hotmail.com|Chang Chen/
 s/^co.liang.ol@gmail.com|.*$/co.liang.ol@gmail.com|lexon/
 s/^cr22rc@gmail.com|rickr$/cr22rc@gmail.com|Rick Rine/
 s/^dan.middleton@intel.com|.*$/dan.middleton@intel.com|Dan Middleton/
-s/^daniel.selman@uk.ibm.com|.*$/daniel.selman@uk.ibm.com|Daniel Selman/
+s/^daniel.selman@uk.ibm.com|.*$/daniel.selman@uk.ibm.com|Dan Selman/
 s/^dice.k1984@gmail.com|.*$/dice.k1984@gmail.com|Daisuke Shimada/
 s/^dmitry.surnin@dsr-company.com|.*$/dmitry.surnin@dsr-company.com|Dmitry Surnin/
 s/^douglas.wightman@evernym.com|.*$/douglas.wightman@evernym.com|Douglas Wightman/
@@ -145,7 +145,12 @@ s/^gennady@il.ibm.com|.*$/gennady@il.ibm.com|Gennady Laventman/
 s/^lindsellgeorge@gmail.com|.*$/lindsellgeorge@gmail.com|George Lindsell/
 s/^nfrunza@gmail.com|.*$/nfrunza@gmail.com|Nik Frunza/
 s/^olga.zheregelya@dsr-company.com|.*$/olga.zheregelya@dsr-company.com|Olga Zheregelya/
-s/Erin.Hughes@ibm.com|.*$/Erin.Hughes@ibm.com|Erin Hughes/
-s/mgisi@corp.ad.wrs.com|.*$/mgisi@corp.ad.wrs.com|Mark Gisi/
-s/hart.montgomery@gmail.com|.*$/hart.montgomery@gmail.com|Hart Montgomery/
+s/^Erin.Hughes@ibm.com|.*$/Erin.Hughes@ibm.com|Erin Hughes/
+s/^mgisi@corp.ad.wrs.com|.*$/mgisi@corp.ad.wrs.com|Mark Gisi/
+s/^hart.montgomery@gmail.com|.*$/hart.montgomery@gmail.com|Hart Montgomery/
+s/^mukhinalexeym@gmail.com|.*$/mukhinalexeym@gmail.com|Alexey Mukhin/
+s/^Bulatmm@yandex.ru|.*$/Bulatmm@yandex.ru|Bulat Mukhutdinov/
+s/^nhan.trong.nguyen@logigear.com|.*$/nhan.trong.nguyen@logigear.com|Nhan Trong Nguyen/
+s/^sambhavdutt@gmail.com|.*$/sambhavdutt@gmail.com|Sambhav Nidamarty/
+s/^stanislav.liberman@cmegroup.com|.*$/stanislav.liberman@cmegroup.com|Stan Liberman/
 /^|Import Committer/d
