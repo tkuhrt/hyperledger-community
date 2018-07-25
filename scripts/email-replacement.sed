@@ -80,6 +80,7 @@ s/jake.turner1@uk.ibm.com/jaketurner25@live.com/
 s/Jake.Turner1@uk.ibm.com/jaketurner25@live.com/
 s/j.turner3-14@student.lboro.ac.uk/jaketurner25@live.com/
 s/ryanx.beck-buysse@intel.com/rbuysse@bitwise.io/
+s/rbuysse@gmail.com/rbuysse@bitwise.io/
 s/sergey.minaev.dev@gmail.com/sergey.minaev@dsr-company.com/
 s/cianmontgomery@gmail.com/cian@cianmontgomery.com/
 s/cian.montgomery@intel.com/cian@cianmontgomery.com/
@@ -128,9 +129,10 @@ s/skibz@users.noreply.github.com/antony@mycosentino.com/
 s/bdot@users.noreply.github.com/techie.bharat@gmail.com/
 s/30467939+hannahrayner@users.noreply.github.com/hannah.rayner@ibm.com/
 s/harsha544@users.noreply.github.com/krishvoor@in.ibm.com/
-s/rjones-lf@users.noreply.github.com/ry+home+github@walledcity.org/
-s/ry@walledcity.org/ry+home+github@walledcity.org/
-s/rjones@linuxfoundation.org/ry+home+github@walledcity.org/
+s/rjones-lf@users.noreply.github.com/ry@linux.com/
+s/ry@walledcity.org/ry@linux.com/
+s/ry+home+github@walledcity.org/ry@linux.com/
+s/rjones@linuxfoundation.org/ry@linux.com/
 s/31342446+sergey-shilov@users.noreply.github.com/sergey.shilov@dsr-company.com/
 s/muralisr@us.ibm.com/srinivasan.muralidharan99@gmail.com/
 s/31738106+chenette@users.noreply.github.com/chenette@bitwise.io/
@@ -148,6 +150,12 @@ s/srottem@users.noreply.github.com/s.rottem@gmail.com/
 s/axel.nennker@telekom.de/axel@nennker.de/
 s/MarkGisi@users.noreply.github.com/mgisi@corp.ad.wrs.com/
 s/mic.bowman@intel.com/cmickeyb@gmail.com/
+s/frantic1993@gmail.com/andrey.goncharov+it@protonmail.com/
+s/nemanja.patrnogic@evernym.com/patrnogicnemanja@gmail.com/
+s/cychaoz@cn.ibm.com/zhaochy_2015@hotmail.com/
+s/gjxgu@cn.ibm.com/gujingxiao@gmail.com/
+s/scottz@us.ibm.com/scott.zwierzynski@gmail.com/
+s/bridger@bitwise.io/scooteeroo@gmail.com/
 /ubuntu@ubuntu-xenial.localdomain/d
 /travis@ibm.com/d
 /evernym-ci@evernym.com/d
