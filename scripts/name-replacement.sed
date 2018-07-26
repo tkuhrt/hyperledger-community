@@ -78,7 +78,7 @@ s/^whitemat@uk.ibm.com|.*$/whitemat@uk.ibm.com|Matthew B White/
 s/^xufengli@uk.ibm.com|.*$/xufengli@uk.ibm.com|Fenglian Xu/
 s/^y.namiki@gmail.com|.*$/y.namiki@gmail.com|Yuta Namiki/
 s/^yacovm@il.ibm.com|.*$/yacovm@il.ibm.com|Yacov Manevich/
-s/^zach@monax.io|.*$/zach@monax.io|Zach Ramsay/
+s/^zach@bluecollarcoding.ca|.*$/zach@bluecollarcoding.ca|Zach Ramsay/
 s/^delventhalz@gmail.com|.*$/delventhalz@gmail.com|Zac Delventhal/
 s/^jonathan@hacera.com|.*$/jonathan@hacera.com|Jonathan Levi/
 s/^drozd@bitwise.io|.*$/drozd@bitwise.io|Nick Drozd/
@@ -153,4 +153,7 @@ s/^Bulatmm@yandex.ru|.*$/Bulatmm@yandex.ru|Bulat Mukhutdinov/
 s/^nhan.trong.nguyen@logigear.com|.*$/nhan.trong.nguyen@logigear.com|Nhan Trong Nguyen/
 s/^sambhavdutt@gmail.com|.*$/sambhavdutt@gmail.com|Sambhav Nidamarty/
 s/^stanislav.liberman@cmegroup.com|.*$/stanislav.liberman@cmegroup.com|Stan Liberman/
+s/^andrey.goncharov+it@protonmail.com|.*$/andrey.goncharov+it@protonmail.com|Andrei Goncharov/
+s/^jiahaoc@vmware.com|.*$/jiahaoc@vmware.com|Jiahao Chen/
+s/^renata.toktar@dsr-corporation.com|.*$/renata.toktar@dsr-corporation.com|Renata Toktar/
 /^|Import Committer/d
