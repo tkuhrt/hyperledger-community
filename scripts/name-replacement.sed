@@ -9,14 +9,14 @@ s/^andreas@monax.io|.*$/andreas@monax.io|Andreas Olofsson/
 s/^artem.ivanov@dsr-company.com|.*$/artem.ivanov@dsr-company.com|Artem Ivanov/
 s/^a_o-dowd@uk.ibm.com|.*$/a_o-dowd@uk.ibm.com|Anthony O'Dowd/
 s/^seeyoucansayo@gmail.com|.*$/seeyoucansayo@gmail.com|Binh Nguyen/
-s/^boydx.johnson@intel.com|.*$/boydx.johnson@intel.com|Boyd Johnson/
+s/^bjohnson@bitwise.io|.*$/bjohnson@bitwise.io|Boyd Johnson/
 s/^cdaughtr@us.ibm.com|.*$/cdaughtr@us.ibm.com|Caroline Daughtrey/
 s/^cian@cianmontgomery.com|.*$/cian@cianmontgomery.com|Cian Montgomery/
 s/^ck-cc@hotmail.com|.*$/ck-cc@hotmail.com|Chang Chen/
 s/^co.liang.ol@gmail.com|.*$/co.liang.ol@gmail.com|lexon/
 s/^cr22rc@gmail.com|rickr$/cr22rc@gmail.com|Rick Rine/
 s/^dan.middleton@intel.com|.*$/dan.middleton@intel.com|Dan Middleton/
-s/^daniel.selman@uk.ibm.com|.*$/daniel.selman@uk.ibm.com|Dan Selman/
+s/^danscode@selman.org|.*$/danscode@selman.org|Dan Selman/
 s/^dice.k1984@gmail.com|.*$/dice.k1984@gmail.com|Daisuke Shimada/
 s/^dmitry.surnin@dsr-company.com|.*$/dmitry.surnin@dsr-company.com|Dmitry Surnin/
 s/^douglas.wightman@evernym.com|.*$/douglas.wightman@evernym.com|Douglas Wightman/
@@ -32,7 +32,7 @@ s/^gregory.haskins@gmail.com|.*$/gregory.haskins@gmail.com|Gregory Haskins/
 s/^gregoryx.setterholm@intel.com|.*$/gregoryx.setterholm@intel.com|Gregory Setterholm/
 s/^hightall@me.com|.*$/hightall@me.com|Haitao Yue/
 s/^jaketurner25@live.com|.*$/jaketurner25@live.com|Jake Turner/
-s/^jamie.jason@intel.com|.*$/jamie.jason@intel.com|Jamie Jason/
+s/^jamie.jason@gmail.com|.*$/jamie.jason@gmail.com|Jamie Jason/
 s/^jason@evernym.us|.*$/jason@evernym.us|Jason Law/
 s/^jiangfeihu@huawei.com|.*$/jiangfeihu@huawei.com|Feihu Jiang/
 s/^jiangyaoguo@gmail.com|.*$/jiangyaoguo@gmail.com|Yaoguo Jiang/
@@ -113,7 +113,7 @@ s/^n.yushkevich@hotmail.com|.*$/n.yushkevich@hotmail.com|Nikolay Yushkevich/
 s/^thakkarparth007@gmail.com|.*$/thakkarparth007@gmail.com|Parth Thakkar/
 s/^ricjhill@gmail.com|.*$/ricjhill@gmail.com|Richard Hill/
 s/^fx19800215@163.com|.*$/fx19800215@163.com|Robert Feng/
-s/^sergey.minaev@dsr-company.com|.*$/sergey.minaev@dsr-company.com|Sergey Minaev/
+s/^sergey.minaev@dsr-corporation.com|.*$/sergey.minaev@dsr-corporation.com|Sergey Minaev/
 s/^suryalnvs@gmail.com|.*$/suryalnvs@gmail.com|Surya/
 s/^litong01@us.ibm.com|.*$/litong01@us.ibm.com|Tong Li/
 s/^adnan.choudhury@itpeoplecorp.com|.*$/adnan.choudhury@itpeoplecorp.com|Adnan Choudhury/
@@ -123,6 +123,7 @@ s/^chrism@fast.au.fujitsu.com|.*$/chrism@fast.au.fujitsu.com|Chirs Murphy/
 s/^andrew.nikitin@dsr-corporation.com|.*$/andrew.nikitin@dsr-corporation.com|Andrew Nikitin/
 s/^david-khala@hotmail.com|.*$/david-khala@hotmail.com|Yuxiang Liu/
 s/^Nishi.Nidamarty@itpeoplecorp.com|.*$/Nishi.Nidamarty@itpeoplecorp.com|Nishi Nidamarty/
+s/^nishi.nidamarty@itpeoplecorp.com|.*$/nishi.nidamarty@itpeoplecorp.com|Nishi Nidamarty/
 s/^pavondes@gmail.com|.*$/pavondes@gmail.com|Pascal Avondes/
 s/^mahoney@uk.ibm.com|.*$/mahoney@uk.ibm.com|Paul O'Mahoney/
 s/^sudheesh1995@outlook.com|.*$/sudheesh1995@outlook.com|Sudheesh Singanamalla/
@@ -137,7 +138,6 @@ s/^RYAN_BANKS@CRGL-THIRDPARTY.COM|.*$/RYAN_BANKS@CRGL-THIRDPARTY.COM|Ryan Banks/
 s/^vladimirshishkinwork@gmail.com|.*$/vladimirshishkinwork@gmail.com|Vladimir Shishkin/
 s/^vladimir.shishkin@dsr-company.com|.*$/vladimir.shishkin@dsr-company.com|Vladimir Shishkin/
 s/^zach@bluecollarcoding.ca|.*$/zach@bluecollarcoding.ca|Zach Ramsay/
-s/^Nishi.Nidamarty@itpeoplecorp.com|.*$/Nishi.Nidamarty@itpeoplecorp.com|Nishi Nidamarty/
 s/^andrew_coleman@uk.ibm.com|.*$/andrew_coleman@uk.ibm.com|Andrew Coleman/
 s/^bluhmdan@gmail.com|.*$/bluhmdan@gmail.com|bluhmdan@gmail.com|Daniel Bluhm/
 s/^daniel.anderson@intel.com|.*$/daniel.anderson@intel.com|Daniel Anderson/
@@ -156,4 +156,13 @@ s/^stanislav.liberman@cmegroup.com|.*$/stanislav.liberman@cmegroup.com|Stan Libe
 s/^andrey.goncharov+it@protonmail.com|.*$/andrey.goncharov+it@protonmail.com|Andrei Goncharov/
 s/^jiahaoc@vmware.com|.*$/jiahaoc@vmware.com|Jiahao Chen/
 s/^renata.toktar@dsr-corporation.com|.*$/renata.toktar@dsr-corporation.com|Renata Toktar/
+s/^cclauss@bluewin.ch|.*$/cclauss@bluewin.ch|Chris Clauss/
+s/^Bulatmm@yandex.ru|.*$/Bulatmm@yandex.ru|Bulat Mukhutdinov/
+s/^mdr@zurich.ibm.com|.*$/mdr@zurich.ibm.com|Manu Drijvers/
+s/^tyukushin@soramitsu.co.jp|.*$/tyukushin@soramitsu.co.jp|Anatoly Tyukushin/
+s/^dimasavva17@gmail.com|.*$/dimasavva17@gmail.com|Dumitru Savva/
+s/^ryan.west@sovrin.org|.*$/ryan.west@sovrin.org|Ryan West/
+s/^dev.edwardsm@gmail.com|.*$/dev.edwardsm@gmail.com|Mekia Edwards/
+s/^mhailstone@byu.edu|.*$/mhailstone@byu.edu|Matthew Hailstone/
+s/^v.oostveen@gmail.com|.*$/v.oostveen@gmail.com|Bas van Oostveen/
 /^|Import Committer/d
