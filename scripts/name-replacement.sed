@@ -8,7 +8,7 @@ s/^andkononykhin@gmail.com|.*$/andkononykhin@gmail.com|Andrey Kononykhin/
 s/^andreas@monax.io|.*$/andreas@monax.io|Andreas Olofsson/
 s/^artem.ivanov@dsr-company.com|.*$/artem.ivanov@dsr-company.com|Artem Ivanov/
 s/^a_o-dowd@uk.ibm.com|.*$/a_o-dowd@uk.ibm.com|Anthony O'Dowd/
-s/^seeyoucansayo@gmail.com|.*$/seeyoucansayo@gmail.com|Binh Nguyen/
+s/^binh1010010110@gmail.com|.*$/binh1010010110@gmail.com|Binh Nguyen/
 s/^bjohnson@bitwise.io|.*$/bjohnson@bitwise.io|Boyd Johnson/
 s/^cdaughtr@us.ibm.com|.*$/cdaughtr@us.ibm.com|Caroline Daughtrey/
 s/^cian@cianmontgomery.com|.*$/cian@cianmontgomery.com|Cian Montgomery/
@@ -126,7 +126,7 @@ s/^Nishi.Nidamarty@itpeoplecorp.com|.*$/Nishi.Nidamarty@itpeoplecorp.com|Nishi N
 s/^nishi.nidamarty@itpeoplecorp.com|.*$/nishi.nidamarty@itpeoplecorp.com|Nishi Nidamarty/
 s/^pavondes@gmail.com|.*$/pavondes@gmail.com|Pascal Avondes/
 s/^mahoney@uk.ibm.com|.*$/mahoney@uk.ibm.com|Paul O'Mahoney/
-s/^sudheesh1995@outlook.com|.*$/sudheesh1995@outlook.com|Sudheesh Singanamalla/
+s/^sudheesh95@gmail.com|.*$/sudheesh95@gmail.com|Sudheesh Singanamalla/
 s/^zhaochy_2015@hotmail.com|.*$/zhaochy_2015@hotmail.com|Zhao Chaoyi/
 s/^kdenhar@gmail.com|.*$/kdenhar@gmail.com|Kyle Den Hartog/
 s/^zhouhaojun@huawei.com|.*$/zhouhaojun@huawei.com|Haojun Zhou/
@@ -146,10 +146,9 @@ s/^lindsellgeorge@gmail.com|.*$/lindsellgeorge@gmail.com|George Lindsell/
 s/^nfrunza@gmail.com|.*$/nfrunza@gmail.com|Nik Frunza/
 s/^olga.zheregelya@dsr-company.com|.*$/olga.zheregelya@dsr-company.com|Olga Zheregelya/
 s/^Erin.Hughes@ibm.com|.*$/Erin.Hughes@ibm.com|Erin Hughes/
-s/^mgisi@corp.ad.wrs.com|.*$/mgisi@corp.ad.wrs.com|Mark Gisi/
+s/^mark.gisi360@gmail.com|.*$/mark.gisi360@gmail.com|Mark Gisi/
 s/^hart.montgomery@gmail.com|.*$/hart.montgomery@gmail.com|Hart Montgomery/
 s/^mukhinalexeym@gmail.com|.*$/mukhinalexeym@gmail.com|Alexey Mukhin/
-s/^Bulatmm@yandex.ru|.*$/Bulatmm@yandex.ru|Bulat Mukhutdinov/
 s/^nhan.trong.nguyen@logigear.com|.*$/nhan.trong.nguyen@logigear.com|Nhan Trong Nguyen/
 s/^sambhavdutt@gmail.com|.*$/sambhavdutt@gmail.com|Sambhav Nidamarty/
 s/^stanislav.liberman@cmegroup.com|.*$/stanislav.liberman@cmegroup.com|Stan Liberman/
@@ -158,6 +157,7 @@ s/^jiahaoc@vmware.com|.*$/jiahaoc@vmware.com|Jiahao Chen/
 s/^renata.toktar@dsr-corporation.com|.*$/renata.toktar@dsr-corporation.com|Renata Toktar/
 s/^cclauss@bluewin.ch|.*$/cclauss@bluewin.ch|Chris Clauss/
 s/^Bulatmm@yandex.ru|.*$/Bulatmm@yandex.ru|Bulat Mukhutdinov/
+s/^bulatmm@yandex.ru|.*$/bulatmm@yandex.ru|Bulat Mukhutdinov/
 s/^mdr@zurich.ibm.com|.*$/mdr@zurich.ibm.com|Manu Drijvers/
 s/^tyukushin@soramitsu.co.jp|.*$/tyukushin@soramitsu.co.jp|Anatoly Tyukushin/
 s/^dimasavva17@gmail.com|.*$/dimasavva17@gmail.com|Dumitru Savva/
@@ -165,4 +165,9 @@ s/^ryan.west@sovrin.org|.*$/ryan.west@sovrin.org|Ryan West/
 s/^dev.edwardsm@gmail.com|.*$/dev.edwardsm@gmail.com|Mekia Edwards/
 s/^mhailstone@byu.edu|.*$/mhailstone@byu.edu|Matthew Hailstone/
 s/^v.oostveen@gmail.com|.*$/v.oostveen@gmail.com|Bas van Oostveen/
+s/^andrea.miele@intel.com|.*$/andrea.miele@intel.com|Andrea Miele/
+s/^rbanks@bitwise.io|.*$/rbanks@bitwise.io|Ryan Banks/
+s/^cais.manai@r3.com|.*$/cais.manai@r3.com|Cais Manai/
+s/^neal.shah@r3.com|.*$/neal.shah@r3.com|Neal Shah/
+s/^ryan.west@sovrin.org|.*$/ryan.west@sovrin.org|Ryan West/
 /^|Import Committer/d

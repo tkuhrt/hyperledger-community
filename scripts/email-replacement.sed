@@ -36,8 +36,8 @@ s/andreas@erisindustries.com/andreas@monax.io/
 s/ben@erisindustries.com/ben@monax.io/
 s/casey@erisindustries.com/casey@monax.io/
 s/rj@erisindustries.com/rj@monax.io/
-s/silas@erisindustries.com/github@silasdavis.net/
-s/silas@monax.io/github@silasdavis.net/
+s/silas@erisindustries.com/silas@monax.io/
+s/github@silasdavis.net/silas@monax.io/
 s/shawnx.amundson@intel.com/amundson@bitwise.io/
 s/mbwhite@users.noreply.github.com/whitemat@uk.ibm.com/
 s/WHITEMAT@uk.ibm.com/whitemat@uk.ibm.com/
@@ -94,7 +94,7 @@ s/peterx.schwarz@intel.com/pschwarz@bitwise.io/
 s/sis@zurich.ibm.com/2-hl-gerrit@0x2c.org/
 s/sheehan@us.ibm.com/sranderson@gmail.com/
 s/jzhang@us.ibm.com/jim_the_matrix@hotmail.com/
-s/jzhang@us.ibm.com/jim_the_matrix@hotmail.com/
+s/jimzhang@Jims-MacBook-Pro.local/jim_the_matrix@hotmail.com/
 s/ccchenbj@cn.ibm.com/ck-cc@hotmail.com/
 s/ray@hyperchain.cn/oldsharp@gmail.com/
 s/stasytar@gmail.com/anastasiya.tarasova@dsr-company.com/
@@ -137,8 +137,8 @@ s/31342446+sergey-shilov@users.noreply.github.com/sergey.shilov@dsr-company.com/
 s/muralisr@us.ibm.com/srinivasan.muralidharan99@gmail.com/
 s/31738106+chenette@users.noreply.github.com/chenette@bitwise.io/
 s/muratovv@users.noreply.github.com/muratovfyodor@yandex.ru/
-s/binhn@us.ibm.com/seeyoucansayo@gmail.com/
-s/binh1010010110@gmail.com/seeyoucansayo@gmail.com/
+s/binhn@us.ibm.com/binh1010010110@gmail.com/
+s/seeyoucansayo@gmail.com/binh1010010110@gmail.com/
 s/ckochenower@users.noreply.github.com/corin.kochenower@evernym.com/
 s/skhoroshavin@users.noreply.github.com/sergey.khoroshavin@dsr-corporation.com/
 s/Toktar@users.noreply.github.com/rmtoktar@gmail.com/
@@ -148,7 +148,8 @@ s/35696678+erin-hughes@users.noreply.github.com/Erin.Hughes@ibm.com/
 s/31096144+nicolapaoli@users.noreply.github.com/nicola@aid.technology/
 s/srottem@users.noreply.github.com/s.rottem@gmail.com/
 s/axel.nennker@telekom.de/axel@nennker.de/
-s/MarkGisi@users.noreply.github.com/mgisi@corp.ad.wrs.com/
+s/MarkGisi@users.noreply.github.com/mark.gisi360@gmail.com/
+s/mgisi@corp.ad.wrs.com/mark.gisi360@gmail.com/
 s/mic.bowman@intel.com/cmickeyb@gmail.com/
 s/frantic1993@gmail.com/andrey.goncharov+it@protonmail.com/
 s/nemanja.patrnogic@evernym.com/patrnogicnemanja@gmail.com/
@@ -165,6 +166,7 @@ s/zach@erisindustries.com/zach@bluecollarcoding.ca/
 s/zach@monax.io/zach@bluecollarcoding.ca/
 s/ryanlassigbanks@gmail.com/rbanks@bitwise.io/
 s/RYAN_BANKS@CRGL-THIRDPARTY.COM/rbanks@bitwise.io/
+s/ryan_banks@crgl-thirdparty.com/rbanks@bitwise.io/
 s/hkang.sunysb@gmail.com/kangh@us.ibm.com/
 s/jiahaochen1993@gmail.com/jiahaoc@vmware.com/
 s/Artemka1528@yandex.ru/artem.ivanov@dsr-company.com/
@@ -192,6 +194,16 @@ s/31378238%2Bryanwest6@users.noreply.github.com/ryan.west@sovrin.org/
 s/dp.dornseifer@gmail.com/david.paul.dornseifer@sap.com/
 s/trbs@trbs.net/v.oostveen@gmail.com/
 s/trbs@users.noreply.github.com/v.oostveen@gmail.com/
+s/36966495+andmiele1@users.noreply.github.com/andrea.miele@intel.com/
+s/sah14@studentbody.byu.edu/spencer.a.holman@gmail.com/
+s/steiner.michi@gmail.com/michael.steiner@intel.com/
+s/30469399+CaisR3@users.noreply.github.com/cais.manai@r3.com/
+s/neal-shah@users.noreply.github.com/neal.shah@r3.com/
+s/32775532+anvabr@users.noreply.github.com/andrey.brozhko@r3.com/
+s/tkuhrt@linuxfoundation.org/tracy.kuhrt@gmail.com/
+s/31378238+ryanwest6@users.noreply.github.com/ryan.west@sovrin.org/
+s/sohansubhash@users.noreply.github.com/accounts@subhash.co/
+s/wang658@usc.edu/shuo.wang94@gmail.com/
 /ubuntu@ubuntu-xenial.localdomain/d
 /travis@ibm.com/d
 /evernym-ci@evernym.com/d
@@ -201,3 +213,4 @@ s/trbs@users.noreply.github.com/v.oostveen@gmail.com/
 /noreply@ibm.com/d
 /github@fabric-composer.org/d
 /you@example.com/d
+/@linuxfoundation.org/d
