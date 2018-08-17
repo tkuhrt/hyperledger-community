@@ -1,5 +1,5 @@
 # Introduction
-This repository contains a Python tool for generating project reports. For each project specified in the configuration file, a HTML file will be generated in the `./html` directory. You can see the format of the output in `templates/report.html`.
+This directory contains a Python tool for generating project reports. For each project specified in the configuration file, a HTML file will be generated in the `./html` directory. You can see the format of the output in `templates/report.html`.
 
 It utilizes the [Github statistics API](https://developer.github.com/v3/repos/statistics/) to report on projects and their repositories. Specifically, it uses the "Get contributors list with additions, deletions, and commit counts":
 ```
