@@ -29,4 +29,4 @@ repos = <organization-name>/<repo-name>
         <organization-name>/<repo-name>
 ```
 
-It is important that you do not specify https://github.com within the `repos` list.
+It is important that you do not specify https://github.com within the `repos` list. You can specify as many different projects in the configuration file as you wish.
