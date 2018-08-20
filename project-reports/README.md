@@ -23,6 +23,8 @@ The tool takes a configuration file of the format:
 ```
 [project-name]
 title = Project Title
+incubation_date = <Month Day, Year>
+active_date = <Month Day, Year>
 repos = <organization-name>/<repo-name>
         <organization-name>/<repo-name>
         ...
@@ -30,3 +32,5 @@ repos = <organization-name>/<repo-name>
 ```
 
 It is important that you do not specify https://github.com within the `repos` list. You can specify as many different projects in the configuration file as you wish.
+
+`incubation_date` and `active_date` are both optional.

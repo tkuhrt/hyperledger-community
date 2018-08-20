@@ -45,7 +45,7 @@ def get_contributors_who_contributed(contributors, percentage):
 
     return rc
 
-def create_output_html(project_name, title, contributors):
+def create_output_html(project_name, title, incubation_date, active_date, contributors):
     now = datetime.datetime.now()
     one_month_ago = now + dateutil.relativedelta.relativedelta(months=-1)
     six_months_ago = now + dateutil.relativedelta.relativedelta(months=-6)
@@ -71,6 +71,8 @@ def create_output_html(project_name, title, contributors):
     context = {
         'title': title,
         'generation_date_time': now.strftime("%Y-%m-%d %H:%M:%S"),
+        'incubation_date': incubation_date,
+        'active_date': active_date,
         'total_contributors': len(contributors),
         'contributors_in_past_year': len(yearly_contributors),
         'active_contributors': active_contributors,
@@ -185,7 +187,18 @@ def main():
             title = cfg[project]['title']
         else:
             title = project.capitalize()
-        create_output_html(project, title, contributors)
+
+        if 'incubation_date' in cfg[project].keys():
+            incubation_date = cfg[project]['incubation_date']
+        else:
+            incubation_date = None
+
+        if 'active_date' in cfg[project].keys():
+            active_date = cfg[project]['active_date']
+        else:
+            active_date = None
+
+        create_output_html(project, title, incubation_date, active_date, contributors)
 
 
 if __name__ == "__main__":

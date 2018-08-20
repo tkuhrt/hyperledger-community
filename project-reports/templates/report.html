@@ -20,6 +20,12 @@
 <body>
   <h1>{{title}} Report</h1>
     <p>Generated: {{generation_date_time}}</p>
+    {% if incubation_date is not none %}
+      <p>Incubation Date: {{ incubation_date }}</p>
+    {%endif %}
+    {% if active_date is not none %}
+      <p>Active Date: {{ active_date }}</p>
+    {%endif %}
     <h2>Contributors Summary</h2>
     <table>
       <tfoot>
