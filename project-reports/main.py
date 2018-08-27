@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from __future__ import division
 
 import os
 from jinja2 import Environment, FileSystemLoader, Template
@@ -45,7 +46,40 @@ def get_contributors_who_contributed(contributors, percentage):
 
     return rc
 
-def create_output_html(project_name, title, incubation_date, active_date, contributors):
+
+def calculate_retention_color(retention_rate, level_of_engagement):
+    rc = "grey"
+    if (retention_rate < .34): # Red
+        if (level_of_engagement > .66): # Green
+            rc = "yellow"
+        else:
+            rc = "red"
+    elif (retention_rate >= .34 and retention_rate <= .66): # Yellow
+        if (level_of_engagement < .34): # Red
+            rc = "red"
+        else:
+            rc = "yellow"
+    else: #Green
+        if (level_of_engagement > .66): # Green
+            rc = "green"
+        else:
+            rc = "yellow"
+
+    return rc
+
+
+def calculate_diversity_color(regular_contributor_percent):
+    rc = "yellow"
+
+    if (regular_contributor_percent < .34):
+        rc = "red"
+    elif (regular_contributor_percent > .66):
+        rc = "green"
+
+    return rc
+
+
+def create_output_html(project_name, title, incubation_date, active_date, contributors, show_details):
     now = datetime.datetime.now()
     one_month_ago = now + dateutil.relativedelta.relativedelta(months=-1)
     six_months_ago = now + dateutil.relativedelta.relativedelta(months=-6)
@@ -66,6 +100,10 @@ def create_output_html(project_name, title, incubation_date, active_date, contri
     regular_contributors = get_contributors_who_contributed(contributors, .95)
     regular_sorted = collections.OrderedDict(sorted(regular_contributors.items(), key=lambda t:t[1]["total_commits"], reverse=True))
 
+    total_contributors = len(contributors)
+    retention_color = calculate_retention_color((len(active_contributors) / total_contributors), (len(repeat_contributors) / total_contributors))
+    diversity_color = calculate_diversity_color(len(regular_sorted) / total_contributors)
+
     # Generate the project report with the given context.
     fname = "./html/" + project_name.lower() + ".html"
     context = {
@@ -73,14 +111,20 @@ def create_output_html(project_name, title, incubation_date, active_date, contri
         'generation_date_time': now.strftime("%Y-%m-%d %H:%M:%S"),
         'incubation_date': incubation_date,
         'active_date': active_date,
-        'total_contributors': len(contributors),
+        'total_contributors': total_contributors,
         'contributors_in_past_year': len(yearly_contributors),
         'active_contributors': active_contributors,
         'new_contributors': new_contributors,
         'repeat_contributors': repeat_sorted,
         'inactive_contributors': inactive_sorted,
         'core_contributors': core_sorted,
-        'regular_contributors': regular_sorted
+        'regular_contributors': regular_sorted,
+        'level_of_interest_color': "grey",
+        'conversion_color': "grey",
+        'retention_color': retention_color,
+        'diversity_color': diversity_color,
+        'maturity_color': "grey",
+        'show_details': show_details
     }
 
     with open(fname, 'w') as f:
@@ -176,6 +220,8 @@ def main():
     parser.add_argument("-p", "--password",
         help="Github access token to use for API calls (required)",
         required=True)
+    parser.add_argument("--details", help="Output detailed lists.",
+        default=False, action='store_true')
     args = parser.parse_args()
 
     cfg = ConfigParser(interpolation=ExtendedInterpolation())
@@ -198,7 +244,7 @@ def main():
         else:
             active_date = None
 
-        create_output_html(project, title, incubation_date, active_date, contributors)
+        create_output_html(project, title, incubation_date, active_date, contributors, args.details)
 
 
 if __name__ == "__main__":

@@ -26,6 +26,36 @@
     {% if active_date is not none %}
       <p>Active Date: {{ active_date }}</p>
     {%endif %}
+    <h2>Health Summary</h2>
+    <table>
+      <tfoot>
+        <tr>
+          <td colspan="5">
+            <sup>1</sup>Combination of retention rate and level of engagement
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5">
+            <sup>2</sup>Regular contributor %: < 34% = Red, > 66% = Green
+          </td>
+        </tr>
+      </tfoot>
+      <tr>
+        <th>Level of Interest</th>
+        <th>Conversion</th>
+        <th>Retention<sup>1</sup></th>
+        <th>Diversity<sup>2</sup></th>
+        <th>Maturity</th>
+      </tr>
+        <td bgcolor={{level_of_interest_color}}></td>
+        <td bgcolor={{conversion_color}}></td>
+        <td bgcolor={{retention_color}}></td>
+        <td bgcolor={{diversity_color}}></td>
+        <td bgcolor={{maturity_color}}></td>
+      <tr>
+      </tr>
+    </table>
+
     <h2>Contributors Summary</h2>
     <table>
       <tfoot>
@@ -131,76 +161,78 @@
       </table>
     {% endif -%}
 
-    <h2>Inactive Contributors</h2>
-    {% if inactive_contributors|length == 0 -%}
-    <p>No inactive contributors</p>
-    {% else -%}
-      <table>
-        <tr>
-            <th>Github Login</th>
-            <th>Last Commit Date</th>
-        </tr>
-      {% set counter = 0 -%}
-      {% for c in inactive_contributors -%}
-        <tr>
-          <td>{{ c }}</td>
-          <td>{{ inactive_contributors[c]["last_commit"]|datetimeformat }}</td>
-        </tr>
-      {% set counter = counter + 1 -%}
-      {% endfor -%}
-    </table>
-    {% endif -%}
+    {%if show_details %}
+      <h2>Inactive Contributors</h2>
+      {% if inactive_contributors|length == 0 -%}
+        <p>No inactive contributors</p>
+      {% else -%}
+        <table>
+          <tr>
+              <th>Github Login</th>
+              <th>Last Commit Date</th>
+          </tr>
+        {% set counter = 0 -%}
+        {% for c in inactive_contributors -%}
+          <tr>
+            <td>{{ c }}</td>
+            <td>{{ inactive_contributors[c]["last_commit"]|datetimeformat }}</td>
+          </tr>
+        {% set counter = counter + 1 -%}
+        {% endfor -%}
+        </table>
+      {% endif -%}
 
-    <h2>Repeat Contributors</h2>
-    {% if repeat_contributors|length == 0 -%}
-    <p>No repeat contributors</p>
-    {% else -%}
+      <h2>Repeat Contributors</h2>
+      {% if repeat_contributors|length == 0 -%}
+        <p>No repeat contributors</p>
+      {% else -%}
+        <table>
+          <tr>
+              <th>Github Login</th>
+              <th>Number of Commits</th>
+          </tr>
+        {% set counter = 0 -%}
+        {% for c in repeat_contributors -%}
+          <tr>
+            <td>{{ c }}</td>
+            <td>{{ repeat_contributors[c]["total_commits"] }}</td>
+          </tr>
+        {% set counter = counter + 1 -%}
+        {% endfor -%}
+        </table>
+      {% endif -%}
+
+      <h2>Core Contributors</h2>
       <table>
         <tr>
             <th>Github Login</th>
             <th>Number of Commits</th>
         </tr>
       {% set counter = 0 -%}
-      {% for c in repeat_contributors -%}
+      {% for c in core_contributors -%}
         <tr>
           <td>{{ c }}</td>
-          <td>{{ repeat_contributors[c]["total_commits"] }}</td>
+          <td>{{ core_contributors[c]["total_commits"] }}</td>
         </tr>
       {% set counter = counter + 1 -%}
       {% endfor -%}
-    </table>
-    {% endif -%}
+      </table>
 
-    <h2>Core Contributors</h2>
-    <table>
-      <tr>
-          <th>Github Login</th>
-          <th>Number of Commits</th>
-      </tr>
-    {% set counter = 0 -%}
-    {% for c in core_contributors -%}
-      <tr>
-        <td>{{ c }}</td>
-        <td>{{ core_contributors[c]["total_commits"] }}</td>
-      </tr>
-    {% set counter = counter + 1 -%}
-    {% endfor -%}
-    </table>
-
-  <h2>Regular Contributors</h2>
-  <table>
-    <tr>
-        <th>Github Login</th>
-        <th>Number of Commits</th>
-    </tr>
-  {% set counter = 0 -%}
-  {% for c in regular_contributors -%}
-    <tr>
-      <td>{{ c }}</td>
-      <td>{{ regular_contributors[c]["total_commits"] }}</td>
-    </tr>
-  {% set counter = counter + 1 -%}
-  {% endfor -%}
-  </table>
+      <h2>Regular Contributors</h2>
+      <table>
+        <tr>
+            <th>Github Login</th>
+            <th>Number of Commits</th>
+        </tr>
+      {% set counter = 0 -%}
+      {% for c in regular_contributors -%}
+        <tr>
+          <td>{{ c }}</td>
+          <td>{{ regular_contributors[c]["total_commits"] }}</td>
+        </tr>
+      {% set counter = counter + 1 -%}
+      {% endfor -%}
+      </table>
+  {% endif %}
   </body>
 </html>

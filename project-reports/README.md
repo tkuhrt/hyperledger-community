@@ -15,6 +15,7 @@ GET /repos/:owner/:repo/stats/contributors
                       Github username to use for API calls (required)
 -p PASSWORD, --password PASSWORD
                       Github access token to use for API calls (required)
+--details             Output detailed lists.
 ```
 
 # Configuration File
