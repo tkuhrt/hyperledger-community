@@ -18,101 +18,10 @@ We expect that over time the metrics that we will report on will continue to gro
 
 Also, it should be noted that the initial metrics are mostly based on source contributions. We will eventually want to gather metrics related to participation via our other tools -- mailing lists, chat, issue tracking, and wiki, for example.
 
-Figure 1: Example of summary report<a name="table-footnote-1"><sup>1</sup></a>
-
-<table>
-  <tr>
-    <td></td>
-    <td>Level of Interest</td>
-    <td>Conversion</td>
-    <td>Retention</td>
-    <td>Diversity</td>
-    <td>Maturity</td>
-  </tr>
-  <tr>
-    <td>Hyperledger Burrow</td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=red></td>
-  </tr>
-  <tr>
-    <td>Hyperledger Caliper</td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=red></td>
-  </tr>
-  <tr>
-    <td>Hyperledger Cello</td>
-    <td bgcolor=red></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=yellow></td>
-  </tr>
-  <tr>
-    <td>Hyperledger Composer</td>
-    <td bgcolor=green></td>
-    <td bgcolor=green></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=yellow></td>
-  </tr>
-  <tr>
-    <td>Hyperledger Explorer</td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=red></td>
-  </tr>
-  <tr>
-    <td>Hyperledger Fabric</td>
-    <td bgcolor=green></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=yellow></td>
-  </tr>
-  <tr>
-    <td>Hyperledger Indy</td>
-    <td bgcolor=green></td>
-    <td bgcolor=green></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=yellow></td>
-  </tr>
-  <tr>
-    <td>Hyperledger Iroha</td>
-    <td bgcolor=red></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=yellow></td>
-  </tr>
-  <tr>
-    <td>Hyperledger Quilt</td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=red></td>
-  </tr>
-  <tr>
-    <td>Hyperledger Sawtooth</td>
-    <td bgcolor=green></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=yellow></td>
-    <td bgcolor=red></td>
-    <td bgcolor=yellow></td>
-  </tr>
-</table>
-
-
+[Figure 1: Example of summary report](#figure-1)<a name="table-footnote-1"><sup>1</sup></a>
+![Summary Reort](./images/sample-summary-report.png "Example of Summary Report")
 <sup>[1](#table-footnote-1)</sup>RYG for illustration purposes only and not reflective of project health
+
 
 # Initial Metrics to Gather
 
