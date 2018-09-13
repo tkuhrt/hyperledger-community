@@ -12,7 +12,7 @@ As a start to gathering metrics for Hyperledger, we want a tool that will allow 
 
 * Maturity - demonstrates how established a community is
 
-In addition to the report per project, we would also like a summary report that shows the RYG state for the above factors for each of the projects. Figure 1 shows an example version of such a report (the RYG is randomized for illustration purposes).
+In addition to the report per project, we would also like a summary report that shows the RYG state for the above factors for each of the projects. <a name="figure-1">Figure 1</a> shows an example version of such a report (the RYG is randomized for illustration purposes).
 
 We expect that over time the metrics that we will report on will continue to grow. As such, we may grow beyond just project reporting to a metrics portal that can be used to slice and dice the data in other ways (for example by providing a report for a Working Group or for the activities of specific Members). A metrics portal is not in the initial statement of work, but should be considered while developing the tool so that it is easy to make changes in the way the data is presented.
 
