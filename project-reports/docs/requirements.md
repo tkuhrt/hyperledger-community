@@ -12,15 +12,15 @@ As a start to gathering metrics for Hyperledger, we want a tool that will allow 
 
 * Maturity - demonstrates how established a community is
 
-In addition to the report per project, we would also like a summary report that shows the RYG state for the above factors for each of the projects. <a name="figure-1">Figure 1</a> shows an example version of such a report (the RYG is randomized for illustration purposes).
+In addition to the report per project, we would also like a summary report that shows the RYG state for the above factors for each of the projects. [Figure 1](#figure1) shows an example version of such a report (the RYG is randomized for illustration purposes).
 
 We expect that over time the metrics that we will report on will continue to grow. As such, we may grow beyond just project reporting to a metrics portal that can be used to slice and dice the data in other ways (for example by providing a report for a Working Group or for the activities of specific Members). A metrics portal is not in the initial statement of work, but should be considered while developing the tool so that it is easy to make changes in the way the data is presented.
 
 Also, it should be noted that the initial metrics are mostly based on source contributions. We will eventually want to gather metrics related to participation via our other tools -- mailing lists, chat, issue tracking, and wiki, for example.
 
-[Figure 1: Example of summary report](#figure-1)<a name="table-footnote-1"><sup>1</sup></a>
+<a id="figure1">Figure 1: Example of summary report</a> <sup>[1](#tablefootnote1)</sup>
 ![Summary Reort](./images/sample-summary-report.png "Example of Summary Report")
-<sup>[1](#table-footnote-1)</sup>RYG for illustration purposes only and not reflective of project health
+<sup><a id="tablefootnote1">1</sup>RYG for illustration purposes only and not reflective of project health
 
 
 # Initial Metrics to Gather
