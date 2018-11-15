@@ -28,7 +28,6 @@ sawtooth_repositories=(
   https://github.com/hyperledger/sawtooth-marketplace.git
   https://github.com/hyperledger/sawtooth-next-directory.git
   https://github.com/hyperledger/sawtooth-poet.git
-  https://github.com/hyperledger/sawtooth-private-utxo.git
   https://github.com/hyperledger/sawtooth-raft.git
   https://github.com/hyperledger/sawtooth-rfcs.git
   https://github.com/hyperledger/sawtooth-sabre.git
