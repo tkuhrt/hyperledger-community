@@ -61,6 +61,7 @@ s/garis@us.ibm.com/gari.r.singh@gmail.com/
 s/14gracel@users.noreply.github.com/liamgrace.896@gmail.com/
 s/Liam.Grace@uk.ibm.com/liamgrace.896@gmail.com/
 s/jjason@users.noreply.github.com/jamie.jason@gmail.com/
+s/jamie.jason@intel.com/jamie.jason@gmail.com/
 s/nick-drozd@users.noreply.github.com/drozd@bitwise.io/
 s/nicholasx.drozd@intel.com/drozd@bitwise.io/
 s/toddx.ojala@intel.com/todd@bitwise.io/

@@ -119,7 +119,7 @@ s/^litong01@us.ibm.com|.*$/litong01@us.ibm.com|Tong Li/
 s/^adnan.choudhury@itpeoplecorp.com|.*$/adnan.choudhury@itpeoplecorp.com|Adnan Choudhury/
 s/^adrian@hopebailie.com|.*$/adrian@hopebailie.com|Adrian Hope-Bailie/
 s/^frantic1993@gmail.com|.*$/frantic1993@gmail.com|Andrei Goncharov/
-s/^chrism@fast.au.fujitsu.com|.*$/chrism@fast.au.fujitsu.com|Chirs Murphy/
+s/^chrism@fast.au.fujitsu.com|.*$/chrism@fast.au.fujitsu.com|Chris Murphy/
 s/^andrew.nikitin@dsr-corporation.com|.*$/andrew.nikitin@dsr-corporation.com|Andrew Nikitin/
 s/^david-khala@hotmail.com|.*$/david-khala@hotmail.com|Yuxiang Liu/
 s/^Nishi.Nidamarty@itpeoplecorp.com|.*$/Nishi.Nidamarty@itpeoplecorp.com|Nishi Nidamarty/
