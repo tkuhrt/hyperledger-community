@@ -1,4 +1,4 @@
-/^|Import Committer/d
+/^.*|Import Committer.*/d
 /ubuntu@ubuntu-xenial.localdomain/d
 /travis@ibm.com/d
 /evernym-ci@evernym.com/d
