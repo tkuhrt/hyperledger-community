@@ -57,9 +57,9 @@ email|name
 
 It is possible that a single person may have used multiple emails and/or names to contribute code. In that case, the email and/or name column will contain multiple values separated by a comma (,).
 
-The file `email-replacement.sed` contains sed entries to replace emails with alternative emails and to delete emails for continuous integration (CI) contributors.
+The `mailmap` file contains a number of [mappings](https://git-scm.com/docs/git-shortlog) that will ensure that the same contributor does not have multiple email addresses and/or names.
 
-The file `name-replacement.sed` contains sed entries to replace nicknames with full names, where known.
+The `cleanup.sed` file will delete non-contributor entries (e.g., those created by tools) and ensure that the format is as specified above.
 
 ### Requirements
 * `git`

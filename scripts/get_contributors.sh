@@ -187,10 +187,10 @@ repo=`basename -s .git $i`
 cd ${repo}
 
 # Get emails and names of contributors of commits from the git log
-git log --format='%aE|%aN' ${since:+--since=${since}} ${until:+--until=${until}} > "${outdir}"/working/${repo}.gitlog
+git log --pretty='%aN <%aE>' ${since:+--since=${since}} ${until:+--until=${until}}| git -c mailmap.file=${script_dir}/mailmap check-mailmap --stdin > "${outdir}"/working/${repo}.gitlog
 
 # Replace duplicate emails with preferred email
-sed -f ${script_dir}/email-replacement.sed -f ${script_dir}/name-replacement.sed "${outdir}"/working/${repo}.gitlog > "${outdir}"/working/${repo}.contributors
+sed -f ${script_dir}/cleanup.sed "${outdir}"/working/${repo}.gitlog > "${outdir}"/working/${repo}.contributors
 
 # Sort contributors based on email (1st key) ignoring case
 LC_ALL=C sort -i -t "|" -k 1 -u -f "${outdir}"/working/${repo}.contributors > "${outdir}"/working/${repo}.sorted
