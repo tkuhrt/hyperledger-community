@@ -101,6 +101,11 @@ caliper_repositories=(
   https://github.com/hyperledger/caliper.git
 )
 
+ursa_repositories=(
+  https://github.com/hyperledger/ursa.git
+  https://github.com/hyperledger/ursa-rfcs.git
+)
+
 labs_repositories=(
   https://github.com/hyperledger-labs/z-mix.git
   https://github.com/hyperledger-labs/private-data-objects.git
@@ -108,6 +113,17 @@ labs_repositories=(
   https://github.com/hyperledger-labs/fabric-chrome-extension.git
   https://github.com/hyperledger-labs/hyperledger-labs.github.io.git
   https://github.com/hyperledger-labs/crypto-lib.git
+  https://github.com/hyperledger-labs/fabric-docs-cn.git
+  https://github.com/hyperledger-labs/fabric-vms-provision.git
+  https://github.com/hyperledger-labs/hyperledger-community-management-tools.git
+  https://github.com/hyperledger-labs/solidity2chaincode.git
+  https://github.com/hyperledger-labs/cordentity.git
+  https://github.com/hyperledger-labs/minbft.git
+  https://github.com/hyperledger-labs/payments-performance-test-harness.git
+  https://github.com/hyperledger-labs/fabric-multi-channel-network-samples.git
+  https://github.com/hyperledger-labs/umbra.git
+  https://github.com/hyperledger-labs/milk-donor.git
+  https://github.com/hyperledger-labs/fabric-secure-chaincode.git
 )
 
 other_repositories=(
@@ -118,6 +134,20 @@ other_repositories=(
   https://github.com/hyperledger/hyperledger-rocket-chat-hubot.git
   https://github.com/hyperledger/hyperledger.github.io.git
   https://github.com/hyperledger/hyperledgerwp.git
+)
+
+project_repositories=(
+  "${fabric_repositories[@]}"
+  "${sawtooth_repositories[@]}"
+  "${iroha_repositories[@]}"
+  "${burrow_repositories[@]}"
+  "${indy_repositories[@]}"
+  "${composer_repositories[@]}"
+  "${cello_repositories[@]}"
+  "${explorer_repositories[@]}"
+  "${quilt_repositories[@]}"
+  "${caliper_repositories[@]}"
+  "${ursa_repositories[@]}"
 )
 
 all_repositories=(
@@ -131,6 +161,9 @@ all_repositories=(
   "${explorer_repositories[@]}"
   "${quilt_repositories[@]}"
   "${caliper_repositories[@]}"
+  "${ursa_repositories[@]}"
+  "${lab_repositories[@]}"
+  "${other_repositories[@]}"
 )
 
 # These two lines look backwards, but they are removing the pattern from the list of all repositories

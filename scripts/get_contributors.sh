@@ -84,6 +84,18 @@ case $key in
         filename+="-caliper"
       fi
     ;;
+    --ursa)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${ursa_repositories[@]}" )
+        filename+="-caliper"
+      fi
+    ;;
+    --projects)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${project_repositories[@]}" )
+        filename+="-projects"
+      fi
+    ;;
     --labs)
       if [[ "$all_specified" == FALSE ]] ; then
         repositories+=( "${labs_repositories[@]}" )
@@ -141,11 +153,12 @@ case $key in
           --explorer: Include Explorer repositories
           --quilt:    Include Quilt repositories
           --caliper:  Include Caliper repositories
+          --projects: Include Project repositories
           --labs:     Include Labs repositories
           --other:    Include Other repositories
           --gerrit:   Include Gerrit repositories
           --github:   Include Github repositories
-          --all:      Include all project repositories.
+          --all:      Include all repositories
                       Does not include labs or other repositories. (default)
           --since:    Includes commits more recent than this date (mm/dd/yyyy).
                       By default starts from the start of the repo.
@@ -182,7 +195,7 @@ cd ${srcdir}/source
 for i in ${repositories[@]};
 do
 echo "Processing $i..."
-git clone $i
+git clone --single-branch $i
 repo=`basename -s .git $i`
 cd ${repo}
 
