@@ -36,6 +36,8 @@ sawtooth_repositories=(
   https://github.com/hyperledger/sawtooth-sdk-go.git
   https://github.com/hyperledger/sawtooth-sdk-java.git
   https://github.com/hyperledger/sawtooth-sdk-javascript.git
+  https://github.com/hyperledger/sawtooth-sdk-python.git
+  https://github.com/hyperledger/sawtooth-sdk-rust.git
   https://github.com/hyperledger/sawtooth-seth.git
   https://github.com/hyperledger/sawtooth-supply-chain.git
   https://github.com/hyperledger/sawtooth-website.git
@@ -63,6 +65,7 @@ indy_repositories=(
   https://github.com/hyperledger/indy-agent.git
   https://github.com/hyperledger/indy-anoncreds.git
   https://github.com/hyperledger/indy-crypto.git
+  https://github.com/hyperledger/indy-docs.git
   https://github.com/hyperledger/indy-hipe.git
   https://github.com/hyperledger/indy-jenkins-pipeline-lib.git
   https://github.com/hyperledger/indy-node.git
