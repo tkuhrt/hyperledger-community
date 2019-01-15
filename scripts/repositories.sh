@@ -9,7 +9,9 @@ fabric_repositories=(
   https://gerrit.hyperledger.org/r/fabric-chaincode-java
   https://gerrit.hyperledger.org/r/fabric-chaincode-node
   https://gerrit.hyperledger.org/r/fabric-chaintool
+  https://gerrit.hyperledger.org/r/fabric-cli
   https://gerrit.hyperledger.org/r/fabric-docs
+  https://gerrit.hyperledger.org/r/fabric-lib-go
   https://gerrit.hyperledger.org/r/fabric-samples
   https://gerrit.hyperledger.org/r/fabric-sdk-go
   https://gerrit.hyperledger.org/r/fabric-sdk-java
@@ -24,9 +26,11 @@ fabric_repositories=(
 sawtooth_repositories=(
   https://github.com/hyperledger/sawtooth-ansible.git
   https://github.com/hyperledger/sawtooth-core.git
+  https://github.com/hyperledger/sawtooth-devmode.git
   https://github.com/hyperledger/sawtooth-explorer.git
   https://github.com/hyperledger/sawtooth-marketplace.git
   https://github.com/hyperledger/sawtooth-next-directory.git
+  https://github.com/hyperledger/sawtooth-pbft.git
   https://github.com/hyperledger/sawtooth-poet.git
   https://github.com/hyperledger/sawtooth-raft.git
   https://github.com/hyperledger/sawtooth-rfcs.git
@@ -52,8 +56,6 @@ iroha_repositories=(
   https://github.com/hyperledger/iroha-ed25519.git
   https://github.com/hyperledger/iroha-ios.git
   https://github.com/hyperledger/iroha-javascript.git
-  https://github.com/hyperledger/iroha-network-tools.git
-  https://github.com/hyperledger/iroha-python.git
   https://github.com/hyperledger/iroha-scala.git
 )
 
@@ -72,11 +74,14 @@ indy_repositories=(
   https://github.com/hyperledger/indy-plenum.git
   https://github.com/hyperledger/indy-post-install-automation.git
   https://github.com/hyperledger/indy-sdk.git
+  https://github.com/hyperledger/indy-test-automation.git
 )
 
 composer_repositories=(
   https://github.com/hyperledger/composer.git
   https://github.com/hyperledger/composer-atom-plugin.git
+  https://github.com/hyperledger/composer-concerto.git
+  https://github.com/hyperledger/composer-concerto-tools.git
   https://github.com/hyperledger/composer-knowledge-wiki.git
   https://github.com/hyperledger/composer-sample-applications.git
   https://github.com/hyperledger/composer-sample-networks.git
@@ -107,6 +112,10 @@ caliper_repositories=(
 ursa_repositories=(
   https://github.com/hyperledger/ursa.git
   https://github.com/hyperledger/ursa-rfcs.git
+)
+
+grid_repositories=(
+  https://github.com/hyperledger/grid.git
 )
 
 labs_repositories=(
@@ -151,6 +160,7 @@ project_repositories=(
   "${quilt_repositories[@]}"
   "${caliper_repositories[@]}"
   "${ursa_repositories[@]}"
+  "${grid_repositories[@]}"
 )
 
 all_repositories=(
@@ -165,6 +175,7 @@ all_repositories=(
   "${quilt_repositories[@]}"
   "${caliper_repositories[@]}"
   "${ursa_repositories[@]}"
+  "${grid_repositories[@]}"
   "${lab_repositories[@]}"
   "${other_repositories[@]}"
 )
