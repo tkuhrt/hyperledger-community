@@ -83,6 +83,18 @@ case $key in
         filename+="-caliper"
       fi
     ;;
+    --ursa)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${ursa_repositories[@]}" )
+        filename+="-ursa"
+      fi
+    ;;
+    --grid)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${grid_repositories[@]}" )
+        filename+="-grid"
+      fi
+    ;;
     --gerrit)
       if [[ "$all_specified" == FALSE ]] ; then
         repositories+=( "${gerrit_repositories[@]}" )
@@ -123,6 +135,8 @@ case $key in
           --explorer:   Create a tarball containing Explorer repositories
           --quilt:      Create a tarball containing Quilt repositories
           --caliper:    Create a tarball containing Caliper repositories
+          --ursa:       Create a tarball containing Ursa repositories
+          --grid:       Create a tarball containing Grid repositories
           --gerrit:     Create a tarball containing Gerrit repositories
           --github:     Create a tarball containing Github repositories
           --all:        Create a tarball containing all repositories

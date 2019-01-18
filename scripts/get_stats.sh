@@ -82,6 +82,18 @@ case $key in
         filename+="-caliper"
       fi
     ;;
+    --ursa)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${ursa_repositories[@]}" )
+        filename+="-ursa"
+      fi
+    ;;
+    --grid)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${grid_repositories[@]}" )
+        filename+="-grid"
+      fi
+    ;;
     --gerrit)
       if [[ "$all_specified" == FALSE ]] ; then
         repositories+=( "${gerrit_repositories[@]}" )
@@ -119,6 +131,8 @@ case $key in
           --explorer:   Get repo stats for Explorer repositories
           --quilt:      Get repo stats for Quilt repositories
           --caliper:    Get repo stats for Caliper repositories
+          --ursa:       Get repo stats for Ursa repositories
+          --grid:       Get repo stats for Grid repositories
           --gerrit:     Get repo stats for Gerrit repositories
           --github:     Get repo stats for Github repositories
           --all:        Get repo stats for all repositories
