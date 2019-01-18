@@ -87,7 +87,13 @@ case $key in
     --ursa)
       if [[ "$all_specified" == FALSE ]] ; then
         repositories+=( "${ursa_repositories[@]}" )
-        filename+="-caliper"
+        filename+="-ursa"
+      fi
+    ;;
+    --grid)
+      if [[ "$all_specified" == FALSE ]] ; then
+        repositories+=( "${grid_repositories[@]}" )
+        filename+="-grid"
       fi
     ;;
     --projects)
