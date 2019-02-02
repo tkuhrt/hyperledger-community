@@ -54,7 +54,9 @@ iroha_repositories=(
   https://github.com/hyperledger/iroha-dotnet.git
   https://github.com/hyperledger/iroha-ed25519.git
   https://github.com/hyperledger/iroha-ios.git
+  https://github.com/hyperledger/iroha-java.git
   https://github.com/hyperledger/iroha-javascript.git
+  https://github.com/hyperledger/iroha-python.git
   https://github.com/hyperledger/iroha-scala.git
 )
 
@@ -115,6 +117,9 @@ ursa_repositories=(
 
 grid_repositories=(
   https://github.com/hyperledger/grid.git
+  https://github.com/hyperledger/grid-website.git
+  https://github.com/hyperledger/grid-contrib.git
+  https://github.com/hyperledger/grid-rfcs.git
 )
 
 labs_repositories=(
@@ -138,7 +143,7 @@ labs_repositories=(
 )
 
 other_repositories=(
-  https://github.com/hyperledger/ci-management.git
+  https://gerrit.hyperledger.org/r/ci-management
   https://github.com/hyperledger/education.git
   https://github.com/hyperledger/education-cryptomoji.git
   https://github.com/hyperledger/hyperledger.git
