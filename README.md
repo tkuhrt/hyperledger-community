@@ -1,3 +1,6 @@
+**NOTE: The files here have been migrated to https://github.com/hyperledger-labs/hyperledger-community-management-tools. Please update them there.**
+
+
 # Hyperledger Community
 This repository contains files related to my role as Hyperledger Community Architect.
 
